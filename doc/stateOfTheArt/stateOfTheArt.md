@@ -13,7 +13,7 @@ Agenda:
 2. What noise regulators have?
 3. How to combat them?
 4. My progress.
-<p style="page-break-after: always;">&nbsp;</p>
+
 
 
 
