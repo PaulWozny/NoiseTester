@@ -1,0 +1,390 @@
+EESchema Schematic File Version 4
+LIBS:Ntester-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Notes Line
+	8050 3500 8050 2150
+Wire Notes Line
+	8050 2150 10000 2150
+Wire Notes Line
+	10000 2150 10000 3500
+Wire Notes Line
+	8050 3500 10000 3500
+Wire Notes Line
+	8100 3850 8100 5050
+Wire Notes Line
+	8100 5050 10200 5050
+Wire Notes Line
+	10200 5050 10200 3850
+Wire Notes Line
+	10200 3850 8100 3850
+Text Notes 6600 1750 0    50   ~ 0
+AC signal path\n
+$Comp
+L Relay:DIPxx-1Axx-12x K1
+U 1 1 5B96A3F0
+P 3000 3100
+F 0 "K1" V 3467 3100 50  0000 C CNN
+F 1 " DIP05-1A72-12L" V 3376 3100 50  0000 C CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 3350 3050 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 3000 3100 50  0001 C CNN
+	1    3000 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J1
+U 1 1 5B96AF24
+P 900 2900
+F 0 "J1" H 830 3138 50  0000 C CNN
+F 1 "1-1337494-0" H 830 3047 50  0000 C CNN
+F 2 "" H 900 2900 50  0001 C CNN
+F 3 " ~" H 900 2900 50  0001 C CNN
+	1    900  2900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	900  3350 900  3100
+Wire Wire Line
+	2700 2900 1950 2900
+$Comp
+L Relay:DIPxx-1Axx-12x K4
+U 1 1 5B96C593
+P 3600 4250
+F 0 "K4" V 4067 4250 50  0000 C CNN
+F 1 " DIP05-1A72-12L" V 3976 4250 50  0000 C CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 3950 4200 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 3600 4250 50  0001 C CNN
+	1    3600 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 4550 3800 4650
+Wire Wire Line
+	3800 2900 3800 3950
+$Comp
+L power:GNDS #PWR0101
+U 1 1 5B96E5F5
+P 900 3350
+F 0 "#PWR0101" H 900 3100 50  0001 C CNN
+F 1 "GNDS" H 905 3177 50  0000 C CNN
+F 2 "" H 900 3350 50  0001 C CNN
+F 3 "" H 900 3350 50  0001 C CNN
+	1    900  3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VD #PWR0102
+U 1 1 5B96E6FF
+P 3400 3300
+F 0 "#PWR0102" H 3400 3150 50  0001 C CNN
+F 1 "+5VD" V 3415 3428 50  0000 L CNN
+F 2 "" H 3400 3300 50  0001 C CNN
+F 3 "" H 3400 3300 50  0001 C CNN
+	1    3400 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5VD #PWR0104
+U 1 1 5B96E9CE
+P 3400 4650
+F 0 "#PWR0104" H 3400 4500 50  0001 C CNN
+F 1 "+5VD" V 3415 4778 50  0000 L CNN
+F 2 "" H 3400 4650 50  0001 C CNN
+F 3 "" H 3400 4650 50  0001 C CNN
+	1    3400 4650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3400 4550 3400 4650
+Wire Wire Line
+	3400 3300 3300 3300
+Wire Wire Line
+	2500 3300 2700 3300
+Wire Wire Line
+	3400 3900 3400 3950
+Text HLabel 2500 3300 0    50   Input ~ 0
+RL_IN
+Text HLabel 3400 3900 1    50   Input ~ 0
+GND_GND
+$Comp
+L Device:C_Small C1
+U 1 1 5B973022
+P 1950 3100
+F 0 "C1" H 2042 3146 50  0000 L CNN
+F 1 "47p" H 2042 3055 50  0000 L CNN
+F 2 "" H 1950 3100 50  0001 C CNN
+F 3 "~" H 1950 3100 50  0001 C CNN
+	1    1950 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 3350 1950 3200
+$Comp
+L power:GNDS #PWR0107
+U 1 1 5B973E6B
+P 1950 3350
+F 0 "#PWR0107" H 1950 3100 50  0001 C CNN
+F 1 "GNDS" H 1955 3177 50  0000 C CNN
+F 2 "" H 1950 3350 50  0001 C CNN
+F 3 "" H 1950 3350 50  0001 C CNN
+	1    1950 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 2900 1950 3000
+$Comp
+L Device:Ferrite_Bead_Small FB1
+U 1 1 5B974B58
+P 1650 2900
+F 0 "FB1" V 1413 2900 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 1504 2900 50  0000 C CNN
+F 2 "" V 1580 2900 50  0001 C CNN
+F 3 "~" H 1650 2900 50  0001 C CNN
+	1    1650 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1100 2900 1500 2900
+Connection ~ 1950 2900
+Wire Wire Line
+	1750 2900 1950 2900
+Wire Wire Line
+	3300 2900 3800 2900
+Text Notes 7400 3650 0    39   ~ 0
+10Hz - 1MHz\n
+Connection ~ 3800 2900
+Wire Wire Line
+	3800 2900 4100 2900
+$Comp
+L power:GNDS #PWR?
+U 1 1 5BB55C98
+P 3800 4650
+F 0 "#PWR?" H 3800 4400 50  0001 C CNN
+F 1 "GNDS" H 3805 4477 50  0000 C CNN
+F 2 "" H 3800 4650 50  0001 C CNN
+F 3 "" H 3800 4650 50  0001 C CNN
+	1    3800 4650
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 4100 2700 750  400 
+U 5BB5BF22
+F0 "CapacitorBank" 50
+F1 "CBNK.sch" 50
+F2 "INCAP" I L 4100 2900 50 
+F3 "OUTCAP" I R 4850 2900 50 
+$EndSheet
+$Comp
+L Device:R_Small R?
+U 1 1 5BB5CF22
+P 5150 2900
+F 0 "R?" V 4954 2900 50  0000 C CNN
+F 1 "R_Small" V 5045 2900 50  0000 C CNN
+F 2 "" H 5150 2900 50  0001 C CNN
+F 3 "~" H 5150 2900 50  0001 C CNN
+	1    5150 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 2900 4850 2900
+$Comp
+L Amplifier_Operational:LT1012 U?
+U 1 1 5BB5D963
+P 6050 2800
+F 0 "U?" H 6100 2950 50  0000 L CNN
+F 1 "LT1012" H 6100 3050 50  0000 L CNN
+F 2 "" H 6100 2850 50  0001 C CNN
+F 3 "http://cds.linear.com/docs/en/datasheet/1012afbs.pdf" H 6100 2950 50  0001 C CNN
+F 4 "X" H 6050 2800 50  0001 C CNN "Spice_Primitive"
+F 5 "LT1028" H 6050 2800 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6050 2800 50  0000 C CNN "Spice_Netlist_Enabled"
+F 7 "spice/LT1028.lib" H 6050 2800 50  0001 C CNN "Spice_Lib_File"
+	1    6050 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2900 5500 2900
+Wire Wire Line
+	5750 2700 5700 2700
+$Comp
+L power:GNDS #PWR?
+U 1 1 5BB5DEB7
+P 5700 2700
+F 0 "#PWR?" H 5700 2450 50  0001 C CNN
+F 1 "GNDS" H 5705 2527 50  0000 C CNN
+F 2 "" H 5700 2700 50  0001 C CNN
+F 3 "" H 5700 2700 50  0001 C CNN
+	1    5700 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 2900 5500 3400
+Wire Wire Line
+	5500 3400 5850 3400
+Connection ~ 5500 2900
+Wire Wire Line
+	5500 2900 5250 2900
+$Comp
+L Device:R_Small R?
+U 1 1 5BB5E2F8
+P 5950 3400
+F 0 "R?" V 5754 3400 50  0000 C CNN
+F 1 "R_Small" V 5845 3400 50  0000 C CNN
+F 2 "" H 5950 3400 50  0001 C CNN
+F 3 "~" H 5950 3400 50  0001 C CNN
+	1    5950 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 2800 6500 2800
+Wire Wire Line
+	6500 2800 6500 3400
+Wire Wire Line
+	6500 3400 6050 3400
+$Comp
+L Device:C_Small C?
+U 1 1 5BB5EF0D
+P 5950 3700
+F 0 "C?" V 5721 3700 50  0000 C CNN
+F 1 "DNP" V 5812 3700 50  0000 C CNN
+F 2 "" H 5950 3700 50  0001 C CNN
+F 3 "~" H 5950 3700 50  0001 C CNN
+	1    5950 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 3700 6500 3700
+Wire Wire Line
+	6500 3700 6500 3400
+Connection ~ 6500 3400
+Wire Wire Line
+	5850 3700 5500 3700
+Wire Wire Line
+	5500 3700 5500 3400
+Connection ~ 5500 3400
+$Comp
+L Device:R_Small R?
+U 1 1 5BB5FC28
+P 1000 4900
+F 0 "R?" H 1059 4946 50  0000 L CNN
+F 1 "1R" H 1059 4855 50  0000 L CNN
+F 2 "" H 1000 4900 50  0001 C CNN
+F 3 "~" H 1000 4900 50  0001 C CNN
+	1    1000 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5BB5FCE0
+P 1500 4900
+F 0 "R?" H 1559 4946 50  0000 L CNN
+F 1 "100R" H 1559 4855 50  0000 L CNN
+F 2 "" H 1500 4900 50  0001 C CNN
+F 3 "~" H 1500 4900 50  0001 C CNN
+	1    1500 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5BB5FD18
+P 2000 4900
+F 0 "R?" H 2059 4946 50  0000 L CNN
+F 1 "10k" H 2059 4855 50  0000 L CNN
+F 2 "" H 2000 4900 50  0001 C CNN
+F 3 "~" H 2000 4900 50  0001 C CNN
+	1    2000 4900
+	1    0    0    -1  
+$EndComp
+Connection ~ 1500 2900
+Wire Wire Line
+	1500 2900 1550 2900
+$Comp
+L Switch:SW_DIP_x03 SW?
+U 1 1 5BB61DDA
+P 1400 4300
+F 0 "SW?" V 1354 4630 50  0000 L CNN
+F 1 "SW_DIP_x03" V 1445 4630 50  0000 L CNN
+F 2 "" H 1400 4300 50  0001 C CNN
+F 3 "" H 1400 4300 50  0001 C CNN
+	1    1400 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1500 2900 1500 3900
+Wire Wire Line
+	1600 4000 1600 3900
+Wire Wire Line
+	1600 3900 1500 3900
+Connection ~ 1500 3900
+Wire Wire Line
+	1500 3900 1500 4000
+Wire Wire Line
+	1500 3900 1400 3900
+Wire Wire Line
+	1400 3900 1400 4000
+Wire Wire Line
+	1400 4600 1400 4700
+Wire Wire Line
+	1400 4700 1000 4700
+Wire Wire Line
+	1000 4700 1000 4800
+Wire Wire Line
+	1500 4600 1500 4800
+Wire Wire Line
+	1600 4600 1600 4700
+Wire Wire Line
+	1600 4700 2000 4700
+Wire Wire Line
+	2000 4700 2000 4800
+$Comp
+L power:GNDS #PWR?
+U 1 1 5BB68AFA
+P 1000 5050
+F 0 "#PWR?" H 1000 4800 50  0001 C CNN
+F 1 "GNDS" H 1005 4877 50  0000 C CNN
+F 2 "" H 1000 5050 50  0001 C CNN
+F 3 "" H 1000 5050 50  0001 C CNN
+	1    1000 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 5000 1000 5050
+$Comp
+L power:GNDS #PWR?
+U 1 1 5BB6A422
+P 1500 5050
+F 0 "#PWR?" H 1500 4800 50  0001 C CNN
+F 1 "GNDS" H 1505 4877 50  0000 C CNN
+F 2 "" H 1500 5050 50  0001 C CNN
+F 3 "" H 1500 5050 50  0001 C CNN
+	1    1500 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 5000 1500 5050
+$Comp
+L power:GNDS #PWR?
+U 1 1 5BB6AC66
+P 2000 5050
+F 0 "#PWR?" H 2000 4800 50  0001 C CNN
+F 1 "GNDS" H 2005 4877 50  0000 C CNN
+F 2 "" H 2000 5050 50  0001 C CNN
+F 3 "" H 2000 5050 50  0001 C CNN
+	1    2000 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 5000 2000 5050
+$EndSCHEMATC

@@ -1,0 +1,21 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LT1493
+D 5MHz, 3V/µs, Low Power, Single Supply, Quad Precision Op Amps, SOIC-16
+K quad opamp
+F http://cds.linear.com/docs/en/datasheet/14923f.pdf
+$ENDCMP
+#
+$CMP LTC6082xGN
+D Precision Quad CMOS Rail-to-Rail Input/Output Amplifiers, SSOP-16
+K quad opamp
+F http://cds.linear.com/docs/en/datasheet/60812fd.pdf
+$ENDCMP
+#
+$CMP OPA4340EA
+D Quad Single-Supply, Rail-to-Rail Operational Amplifier, MicroAmplifier Series, SSOP-16
+K quad opamp
+F http://www.ti.com/lit/ds/symlink/opa340.pdf
+$ENDCMP
+#
+#End Doc Library

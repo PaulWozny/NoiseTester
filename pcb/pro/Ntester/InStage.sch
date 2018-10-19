@@ -1,0 +1,280 @@
+EESchema Schematic File Version 4
+LIBS:Ntester-cache
+EELAYER 28 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_BJT:BC847BDW1 Q?
+U 1 1 5BCA38AA
+P 3650 3200
+F 0 "Q?" H 3840 3246 50  0000 L CNN
+F 1 "BC847BDW1" H 3840 3155 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 3850 3300 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/BC846BDW1T1-D.PDF" H 3650 3200 50  0001 C CNN
+	1    3650 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC847BDW1 Q?
+U 2 1 5BCA38B0
+P 5100 3200
+F 0 "Q?" H 5291 3246 50  0000 L CNN
+F 1 "BC847BDW1" H 5291 3155 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 5300 3300 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/BC846BDW1T1-D.PDF" H 5100 3200 50  0001 C CNN
+	2    5100 3200
+	-1   0    0    -1  
+$EndComp
+Text HLabel 1750 2800 0    50   Input ~ 0
+IN_SIG
+$Comp
+L Device:R_Small R?
+U 1 1 5BCA3BEF
+P 4400 3900
+F 0 "R?" H 4459 3946 50  0000 L CNN
+F 1 "1k" H 4459 3855 50  0000 L CNN
+F 2 "" H 4400 3900 50  0001 C CNN
+F 3 "~" H 4400 3900 50  0001 C CNN
+	1    4400 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3400 3750 3550
+Wire Wire Line
+	3750 3550 4400 3550
+Wire Wire Line
+	5000 3550 5000 3400
+Wire Wire Line
+	4400 3800 4400 3550
+Connection ~ 4400 3550
+Wire Wire Line
+	4400 3550 5000 3550
+$Comp
+L power:-5V #PWR?
+U 1 1 5BCA44FA
+P 4400 4100
+F 0 "#PWR?" H 4400 4200 50  0001 C CNN
+F 1 "-5V" H 4415 4273 50  0000 C CNN
+F 2 "" H 4400 4100 50  0001 C CNN
+F 3 "" H 4400 4100 50  0001 C CNN
+	1    4400 4100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4400 4100 4400 4000
+$Comp
+L Device:R_Small R?
+U 1 1 5BCA4ED7
+P 3750 1750
+F 0 "R?" H 3809 1796 50  0000 L CNN
+F 1 "1k" H 3809 1705 50  0000 L CNN
+F 2 "" H 3750 1750 50  0001 C CNN
+F 3 "~" H 3750 1750 50  0001 C CNN
+	1    3750 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5BCA53A4
+P 5000 1750
+F 0 "R?" H 5059 1796 50  0000 L CNN
+F 1 "1k" H 5059 1705 50  0000 L CNN
+F 2 "" H 5000 1750 50  0001 C CNN
+F 3 "~" H 5000 1750 50  0001 C CNN
+	1    5000 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 1850 3750 2200
+Wire Wire Line
+	5000 3000 5000 2850
+Wire Wire Line
+	3750 1650 3750 1550
+Wire Wire Line
+	5000 1550 5000 1650
+$Comp
+L power:+5V #PWR?
+U 1 1 5BCA759C
+P 3750 1550
+F 0 "#PWR?" H 3750 1400 50  0001 C CNN
+F 1 "+5V" H 3765 1723 50  0000 C CNN
+F 2 "" H 3750 1550 50  0001 C CNN
+F 3 "" H 3750 1550 50  0001 C CNN
+	1    3750 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5BCA7B36
+P 5000 1550
+F 0 "#PWR?" H 5000 1400 50  0001 C CNN
+F 1 "+5V" H 5015 1723 50  0000 C CNN
+F 2 "" H 5000 1550 50  0001 C CNN
+F 3 "" H 5000 1550 50  0001 C CNN
+	1    5000 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5BCA950A
+P 5700 2200
+F 0 "R?" V 5504 2200 50  0000 C CNN
+F 1 "470R" V 5595 2200 50  0000 C CNN
+F 2 "" H 5700 2200 50  0001 C CNN
+F 3 "~" H 5700 2200 50  0001 C CNN
+	1    5700 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5BCA9E39
+P 4400 2850
+F 0 "C?" V 4171 2850 50  0000 C CNN
+F 1 "100p" V 4262 2850 50  0000 C CNN
+F 2 "" H 4400 2850 50  0001 C CNN
+F 3 "~" H 4400 2850 50  0001 C CNN
+	1    4400 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4500 2850 5000 2850
+Connection ~ 5000 2850
+Wire Wire Line
+	5000 2850 5000 2500
+Wire Wire Line
+	4300 2850 3750 2850
+Connection ~ 3750 2850
+Wire Wire Line
+	3750 2850 3750 3000
+Connection ~ 3750 2200
+Wire Wire Line
+	3750 2200 3750 2850
+Wire Wire Line
+	5600 2500 5000 2500
+Connection ~ 5000 2500
+Wire Wire Line
+	5000 2500 5000 1850
+$Comp
+L Device:R_Small R?
+U 1 1 5BCB1C00
+P 5700 2500
+F 0 "R?" V 5504 2500 50  0000 C CNN
+F 1 "470R" V 5595 2500 50  0000 C CNN
+F 2 "" H 5700 2500 50  0001 C CNN
+F 3 "~" H 5700 2500 50  0001 C CNN
+	1    5700 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5BCB2898
+P 6350 1700
+F 0 "C?" V 6121 1700 50  0000 C CNN
+F 1 "68p" V 6212 1700 50  0000 C CNN
+F 2 "" H 6350 1700 50  0001 C CNN
+F 3 "~" H 6350 1700 50  0001 C CNN
+	1    6350 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 2200 5600 2200
+Wire Wire Line
+	6050 2200 5950 2200
+Wire Wire Line
+	5950 2200 5800 2200
+Wire Wire Line
+	5800 2500 5950 2500
+Wire Wire Line
+	5950 2200 5950 1700
+Wire Wire Line
+	5950 1700 6250 1700
+Connection ~ 5950 2200
+Wire Wire Line
+	6450 1700 6800 1700
+Wire Wire Line
+	6800 1700 6800 2300
+Wire Wire Line
+	6800 2300 6650 2300
+$Comp
+L Ntester_additional:LT1818 U?
+U 1 1 5BCA0F24
+P 6350 2300
+F 0 "U?" H 6550 2400 50  0000 C CNN
+F 1 "LT1818" H 6600 2500 50  0000 C CNN
+F 2 "" H 6350 2300 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/18189fb.pdf" H 6350 2850 50  0001 C CNN
+	1    6350 2300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6050 2400 5950 2400
+Wire Wire Line
+	5950 2400 5950 2500
+Connection ~ 6800 2300
+$Comp
+L Device:CP_Small C?
+U 1 1 5BCA4394
+P 7750 2300
+F 0 "C?" V 7525 2300 50  0000 C CNN
+F 1 "330uF" V 7616 2300 50  0000 C CNN
+F 2 "" H 7750 2300 50  0001 C CNN
+F 3 "~" H 7750 2300 50  0001 C CNN
+	1    7750 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP_Small C?
+U 1 1 5BCA4C04
+P 7750 2650
+F 0 "C?" V 7525 2650 50  0000 C CNN
+F 1 "DNP" V 7616 2650 50  0000 C CNN
+F 2 "" H 7750 2650 50  0001 C CNN
+F 3 "~" H 7750 2650 50  0001 C CNN
+	1    7750 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6800 2300 7550 2300
+Wire Wire Line
+	7650 2650 7550 2650
+Wire Wire Line
+	7550 2650 7550 2300
+Connection ~ 7550 2300
+Wire Wire Line
+	7550 2300 7650 2300
+Wire Wire Line
+	7850 2650 8000 2650
+Wire Wire Line
+	8000 2650 8000 2300
+Wire Wire Line
+	8000 2300 7850 2300
+Wire Wire Line
+	8000 2300 8250 2300
+Connection ~ 8000 2300
+$Comp
+L Device:R_Small R?
+U 1 1 5BCA7B32
+P 8350 2300
+F 0 "R?" V 8154 2300 50  0000 C CNN
+F 1 "R_Small" V 8245 2300 50  0000 C CNN
+F 2 "" H 8350 2300 50  0001 C CNN
+F 3 "~" H 8350 2300 50  0001 C CNN
+	1    8350 2300
+	0    1    1    0   
+$EndComp
+Text HLabel 8650 2300 2    50   Input ~ 0
+OUT_SIG
+Wire Wire Line
+	8650 2300 8450 2300
+$EndSCHEMATC
