@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name test)(type KiCad)(uri /home/pwozny/Documents/NoiseTester/NoiseTester-PCB/pro/test.pretty)(options "")(descr ""))
-)
