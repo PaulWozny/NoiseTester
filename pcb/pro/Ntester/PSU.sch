@@ -1,0 +1,423 @@
+EESchema Schematic File Version 4
+LIBS:Ntester-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Battery BT1
+U 1 1 5BDA050B
+P 1600 4950
+F 0 "BT1" H 1708 4996 50  0000 L CNN
+F 1 "https://allegro.pl/koszyk-na-baterie-3x-d-r20-i7578288636.html" H 1708 4905 50  0000 L CNN
+F 2 "" V 1600 5010 50  0001 C CNN
+F 3 "~" V 1600 5010 50  0001 C CNN
+	1    1600 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J8
+U 1 1 5BDA117E
+P 4550 3550
+F 0 "J8" H 4658 3831 50  0000 C CNN
+F 1 "PWR IN" H 4658 3740 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4550 3550 50  0001 C CNN
+F 3 "~" H 4550 3550 50  0001 C CNN
+	1    4550 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3450 4750 3450
+Wire Wire Line
+	5250 3650 4750 3650
+$Comp
+L power:GND #PWR0150
+U 1 1 5BDA3DDB
+P 9150 3550
+F 0 "#PWR0150" H 9150 3300 50  0001 C CNN
+F 1 "GND" V 9155 3422 50  0000 R CNN
+F 2 "" H 9150 3550 50  0001 C CNN
+F 3 "" H 9150 3550 50  0001 C CNN
+	1    9150 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Schottky_AAK D?
+U 1 1 5BDA6B56
+P 6550 3150
+AR Path="/5BDA6B56" Ref="D?"  Part="1" 
+AR Path="/5BD77D91/5BDA6B56" Ref="D?"  Part="1" 
+AR Path="/5BD9C0CB/5BDA6B56" Ref="D3"  Part="1" 
+F 0 "D3" V 6529 3294 50  0000 L CNN
+F 1 "BAS116LT1G" V 6620 3294 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6550 3150 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/BAS116LT1-D.PDF" H 6550 3150 50  0001 C CNN
+	1    6550 3150
+	0    1    1    0   
+$EndComp
+NoConn ~ 6550 3350
+$Comp
+L power:+5V #PWR?
+U 1 1 5BDA6B5D
+P 9200 2550
+AR Path="/5BCA1695/5BDA6B5D" Ref="#PWR?"  Part="1" 
+AR Path="/5BE0B501/5BDA6B5D" Ref="#PWR?"  Part="1" 
+AR Path="/5BDA6B5D" Ref="#PWR?"  Part="1" 
+AR Path="/5BD77D91/5BDA6B5D" Ref="#PWR?"  Part="1" 
+AR Path="/5BD9C0CB/5BDA6B5D" Ref="#PWR0151"  Part="1" 
+F 0 "#PWR0151" H 9200 2400 50  0001 C CNN
+F 1 "+5V" H 9215 2723 50  0000 C CNN
+F 2 "" H 9200 2550 50  0001 C CNN
+F 3 "" H 9200 2550 50  0001 C CNN
+	1    9200 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky_AAK D?
+U 1 1 5BDA6B67
+P 6550 3950
+AR Path="/5BDA6B67" Ref="D?"  Part="1" 
+AR Path="/5BD77D91/5BDA6B67" Ref="D?"  Part="1" 
+AR Path="/5BD9C0CB/5BDA6B67" Ref="D4"  Part="1" 
+F 0 "D4" V 6529 4094 50  0000 L CNN
+F 1 "BAS116LT1G" V 6620 4094 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6550 3950 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/BAS116LT1-D.PDF" H 6550 3950 50  0001 C CNN
+	1    6550 3950
+	0    1    -1   0   
+$EndComp
+NoConn ~ 6550 3750
+$Comp
+L power:-5V #PWR?
+U 1 1 5BDA6B6F
+P 9200 4600
+AR Path="/5BCA1695/5BDA6B6F" Ref="#PWR?"  Part="1" 
+AR Path="/5BE0B501/5BDA6B6F" Ref="#PWR?"  Part="1" 
+AR Path="/5BDA6B6F" Ref="#PWR?"  Part="1" 
+AR Path="/5BD77D91/5BDA6B6F" Ref="#PWR?"  Part="1" 
+AR Path="/5BD9C0CB/5BDA6B6F" Ref="#PWR0152"  Part="1" 
+F 0 "#PWR0152" H 9200 4700 50  0001 C CNN
+F 1 "-5V" H 9215 4773 50  0000 C CNN
+F 2 "" H 9200 4600 50  0001 C CNN
+F 3 "" H 9200 4600 50  0001 C CNN
+	1    9200 4600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9200 2550 9200 2700
+Wire Wire Line
+	6550 4100 6550 4300
+Wire Wire Line
+	4750 3550 5450 3550
+$Comp
+L Device:Battery BT2
+U 1 1 5BDAE5FB
+P 1600 5500
+F 0 "BT2" H 1708 5546 50  0000 L CNN
+F 1 "https://allegro.pl/koszyk-na-baterie-3x-d-r20-i7578288636.html" H 1708 5455 50  0000 L CNN
+F 2 "" V 1600 5560 50  0001 C CNN
+F 3 "~" V 1600 5560 50  0001 C CNN
+	1    1600 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5BDBC650
+P 6250 3150
+AR Path="/5BCA1695/5BDBC650" Ref="C?"  Part="1" 
+AR Path="/5BDBC650" Ref="C?"  Part="1" 
+AR Path="/5BD77D91/5BDBC650" Ref="C?"  Part="1" 
+AR Path="/5BD9C0CB/5BDBC650" Ref="C43"  Part="1" 
+F 0 "C43" V 6021 3150 50  0000 C CNN
+F 1 "885012006007" V 6112 3150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6250 3150 50  0001 C CNN
+F 3 "https://katalog.we-online.de/pbs/datasheet/885012006007.pdf" H 6250 3150 50  0001 C CNN
+	1    6250 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 2800 6250 2800
+Wire Wire Line
+	6250 2800 6250 3050
+Wire Wire Line
+	6250 3550 6250 3250
+Connection ~ 6250 3550
+Wire Wire Line
+	5500 2800 5250 2800
+Wire Wire Line
+	5250 2800 5250 3450
+$Comp
+L Device:C_Small C?
+U 1 1 5BDC9173
+P 6250 3950
+AR Path="/5BCA1695/5BDC9173" Ref="C?"  Part="1" 
+AR Path="/5BDC9173" Ref="C?"  Part="1" 
+AR Path="/5BD77D91/5BDC9173" Ref="C?"  Part="1" 
+AR Path="/5BD9C0CB/5BDC9173" Ref="C44"  Part="1" 
+F 0 "C44" V 6021 3950 50  0000 C CNN
+F 1 "885012006007" V 6112 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6250 3950 50  0001 C CNN
+F 3 "https://katalog.we-online.de/pbs/datasheet/885012006007.pdf" H 6250 3950 50  0001 C CNN
+	1    6250 3950
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5700 4300 6250 4300
+Wire Wire Line
+	6250 4300 6250 4050
+Wire Wire Line
+	6250 3550 6250 3850
+Wire Wire Line
+	5500 4300 5250 4300
+Wire Wire Line
+	5250 4300 5250 3650
+Connection ~ 6250 4300
+Connection ~ 6250 2800
+Wire Wire Line
+	6550 2800 6550 3000
+Wire Wire Line
+	7500 4400 7850 4400
+Wire Wire Line
+	9200 4400 9200 4600
+Wire Wire Line
+	6250 2800 6250 2700
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5BE2D24F
+P 6250 2700
+AR Path="/5BCA1695/5BE2D24F" Ref="TP?"  Part="1" 
+AR Path="/5BD9C0CB/5BE2D24F" Ref="TP6"  Part="1" 
+F 0 "TP6" H 6308 2772 50  0000 L CNN
+F 1 "TestPoint" H 6308 2727 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 6450 2700 50  0001 C CNN
+F 3 "~" H 6450 2700 50  0001 C CNN
+	1    6250 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 4300 6250 4500
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5BE2D732
+P 6250 4500
+AR Path="/5BCA1695/5BE2D732" Ref="TP?"  Part="1" 
+AR Path="/5BD9C0CB/5BE2D732" Ref="TP7"  Part="1" 
+F 0 "TP7" H 6308 4572 50  0000 L CNN
+F 1 "TestPoint" H 6308 4527 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 6450 4500 50  0001 C CNN
+F 3 "~" H 6450 4500 50  0001 C CNN
+	1    6250 4500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5450 3550 5450 3450
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5BEC6219
+P 5450 3450
+AR Path="/5BCA1695/5BEC6219" Ref="TP?"  Part="1" 
+AR Path="/5BD9C0CB/5BEC6219" Ref="TP2"  Part="1" 
+F 0 "TP2" H 5508 3522 50  0000 L CNN
+F 1 "TestPoint" H 5508 3477 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5650 3450 50  0001 C CNN
+F 3 "~" H 5650 3450 50  0001 C CNN
+	1    5450 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 2700 7850 2600
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5BEFFE5F
+P 7850 2600
+AR Path="/5BCA1695/5BEFFE5F" Ref="TP?"  Part="1" 
+AR Path="/5BD9C0CB/5BEFFE5F" Ref="TP12"  Part="1" 
+F 0 "TP12" H 7908 2672 50  0000 L CNN
+F 1 "TestPoint" H 7908 2627 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 8050 2600 50  0001 C CNN
+F 3 "~" H 8050 2600 50  0001 C CNN
+	1    7850 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 4400 7850 4600
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5BF007C1
+P 7850 4600
+AR Path="/5BCA1695/5BF007C1" Ref="TP?"  Part="1" 
+AR Path="/5BD9C0CB/5BF007C1" Ref="TP11"  Part="1" 
+F 0 "TP11" H 7908 4672 50  0000 L CNN
+F 1 "TestPoint" H 7908 4627 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 8050 4600 50  0001 C CNN
+F 3 "~" H 8050 4600 50  0001 C CNN
+	1    7850 4600
+	-1   0    0    1   
+$EndComp
+Connection ~ 7850 4400
+Wire Wire Line
+	7850 4400 9200 4400
+Connection ~ 7850 2700
+Wire Wire Line
+	7850 2700 9200 2700
+$Comp
+L Switch:SW_DPDT_x2 SW1
+U 1 1 5BF33594
+P 7300 2800
+F 0 "SW1" H 7300 2475 50  0000 C CNN
+F 1 "JS202011CQN" H 7300 2566 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 7300 2800 50  0001 C CNN
+F 3 "" H 7300 2800 50  0001 C CNN
+	1    7300 2800
+	1    0    0    1   
+$EndComp
+$Comp
+L Switch:SW_DPDT_x2 SW1
+U 2 1 5BF340DE
+P 7300 4300
+F 0 "SW1" H 7300 4585 50  0000 C CNN
+F 1 "JS202011CQN" H 7300 4494 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 7300 4300 50  0001 C CNN
+F 3 "" H 7300 4300 50  0001 C CNN
+	2    7300 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Polyfuse_Small F1
+U 1 1 5BF37271
+P 5600 2800
+F 0 "F1" V 5395 2800 50  0000 C CNN
+F 1 "Polyfuse_Small" V 5486 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5650 2600 50  0001 L CNN
+F 3 "~" H 5600 2800 50  0001 C CNN
+	1    5600 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Polyfuse_Small F2
+U 1 1 5BF3A24B
+P 5600 4300
+F 0 "F2" V 5395 4300 50  0000 C CNN
+F 1 "Polyfuse_Small" V 5486 4300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5650 4100 50  0001 L CNN
+F 3 "~" H 5600 4300 50  0001 C CNN
+	1    5600 4300
+	0    1    1    0   
+$EndComp
+Connection ~ 5450 3550
+Wire Wire Line
+	5450 3550 6250 3550
+Wire Wire Line
+	7100 2800 7050 2800
+Wire Wire Line
+	7100 4300 7000 4300
+Connection ~ 6550 2800
+Wire Wire Line
+	6550 2800 6250 2800
+Connection ~ 6550 4300
+Wire Wire Line
+	6550 4300 6250 4300
+Wire Wire Line
+	6650 3350 6650 3550
+Wire Wire Line
+	6650 3550 9150 3550
+Connection ~ 6650 3550
+Wire Wire Line
+	6650 3550 6650 3750
+Wire Wire Line
+	6650 3550 6250 3550
+Wire Wire Line
+	7500 2700 7850 2700
+Wire Wire Line
+	7500 2900 7550 2900
+Wire Wire Line
+	7550 2900 7550 3000
+Wire Wire Line
+	7550 3000 7050 3000
+Wire Wire Line
+	7050 3000 7050 2800
+Connection ~ 7050 2800
+Wire Wire Line
+	7050 2800 6550 2800
+Wire Wire Line
+	7500 4200 7600 4200
+Wire Wire Line
+	7600 4200 7600 3950
+Wire Wire Line
+	7600 3950 7000 3950
+Wire Wire Line
+	7000 3950 7000 4300
+Connection ~ 7000 4300
+Wire Wire Line
+	7000 4300 6550 4300
+$Comp
+L Device:LED_Small D5
+U 1 1 5BFE7BEF
+P 9900 3400
+F 0 "D5" V 9946 3332 50  0000 R CNN
+F 1 "LED_Small" V 9855 3332 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9900 3400 50  0001 C CNN
+F 3 "~" V 9900 3400 50  0001 C CNN
+	1    9900 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R22
+U 1 1 5BFE848A
+P 9900 3750
+F 0 "R22" H 9959 3796 50  0000 L CNN
+F 1 "10k" H 9959 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 9900 3750 50  0001 C CNN
+F 3 "~" H 9900 3750 50  0001 C CNN
+	1    9900 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 3300 9900 3150
+Wire Wire Line
+	9900 3500 9900 3650
+Wire Wire Line
+	9900 3850 9900 4100
+$Comp
+L power:-5V #PWR?
+U 1 1 5BFEE66A
+P 9900 4100
+AR Path="/5BCA1695/5BFEE66A" Ref="#PWR?"  Part="1" 
+AR Path="/5BE0B501/5BFEE66A" Ref="#PWR?"  Part="1" 
+AR Path="/5BFEE66A" Ref="#PWR?"  Part="1" 
+AR Path="/5BD77D91/5BFEE66A" Ref="#PWR?"  Part="1" 
+AR Path="/5BD9C0CB/5BFEE66A" Ref="#PWR0148"  Part="1" 
+F 0 "#PWR0148" H 9900 4200 50  0001 C CNN
+F 1 "-5V" H 9915 4273 50  0000 C CNN
+F 2 "" H 9900 4100 50  0001 C CNN
+F 3 "" H 9900 4100 50  0001 C CNN
+	1    9900 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5BFEEA35
+P 9900 3150
+AR Path="/5BCA1695/5BFEEA35" Ref="#PWR?"  Part="1" 
+AR Path="/5BE0B501/5BFEEA35" Ref="#PWR?"  Part="1" 
+AR Path="/5BFEEA35" Ref="#PWR?"  Part="1" 
+AR Path="/5BD77D91/5BFEEA35" Ref="#PWR?"  Part="1" 
+AR Path="/5BD9C0CB/5BFEEA35" Ref="#PWR0149"  Part="1" 
+F 0 "#PWR0149" H 9900 3000 50  0001 C CNN
+F 1 "+5V" H 9915 3323 50  0000 C CNN
+F 2 "" H 9900 3150 50  0001 C CNN
+F 3 "" H 9900 3150 50  0001 C CNN
+	1    9900 3150
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

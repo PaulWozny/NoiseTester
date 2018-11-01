@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/pwozny/Documents/NoiseTester/pcb/pro/Ntester/Ntester.sch</source>
-    <date>nie, 28 paź 2018, 20:08:10</date>
+    <date>pon, 29 paź 2018, 18:36:49</date>
     <tool>Eeschema 6.0.0-rc1-unknown-3dddca7~66~ubuntu18.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -17,13 +17,13 @@
         <comment number="4" value=""/>
       </title_block>
     </sheet>
-    <sheet number="2" name="/InputStage/" tstamps="/5BCA1695/">
+    <sheet number="2" name="/InputAmplifier/" tstamps="/5BCA1695/">
       <title_block>
         <title/>
         <company/>
         <rev/>
         <date/>
-        <source>InStage.sch</source>
+        <source>InAmp.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
@@ -43,120 +43,21 @@
         <comment number="4" value=""/>
       </title_block>
     </sheet>
+    <sheet number="4" name="/InputStage/" tstamps="/5BD77D91/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>InStage.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
   </design>
   <components>
-    <comp ref="C2">
-      <value>B45196-H2227-M409</value>
-      <footprint>Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D</footprint>
-      <datasheet>http://datasheetz.com/data/Capacitors/Tantalum/495-2226-1-datasheetz.html</datasheet>
-      <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5BE83E7D</tstamp>
-    </comp>
-    <comp ref="R3">
-      <value> RMCF0603FT499R</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
-      <datasheet>https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf</datasheet>
-      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5BE83EC6</tstamp>
-    </comp>
-    <comp ref="J1">
-      <value>Conn_Coaxial</value>
-      <footprint>Connector_Coaxial:BNC_TEConnectivity_1478204_Vertical</footprint>
-      <datasheet> ~</datasheet>
-      <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5BEF46A5</tstamp>
-    </comp>
-    <comp ref="FB1">
-      <value>742792651 </value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
-      <datasheet>https://katalog.we-online.de/pbs/datasheet/742792651.pdf</datasheet>
-      <libsource lib="Device" part="Ferrite_Bead_Small" description="Ferrite bead, small symbol"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5BEF4FAC</tstamp>
-    </comp>
-    <comp ref="C4">
-      <value>885012006007</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
-      <datasheet>https://katalog.we-online.de/pbs/datasheet/885012006007.pdf</datasheet>
-      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5BF00591</tstamp>
-    </comp>
-    <comp ref="C5">
-      <value>B45196-H2227-M409</value>
-      <footprint>Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D</footprint>
-      <datasheet>http://datasheetz.com/data/Capacitors/Tantalum/495-2226-1-datasheetz.html</datasheet>
-      <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5BF0D8AF</tstamp>
-    </comp>
-    <comp ref="C6">
-      <value>B45196-H2227-M409</value>
-      <footprint>Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D</footprint>
-      <datasheet>http://datasheetz.com/data/Capacitors/Tantalum/495-2226-1-datasheetz.html</datasheet>
-      <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5BF0DBAB</tstamp>
-    </comp>
-    <comp ref="C7">
-      <value>DNP</value>
-      <footprint>Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D</footprint>
-      <datasheet>http://datasheetz.com/data/Capacitors/Tantalum/495-2226-1-datasheetz.html</datasheet>
-      <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5BF0DECE</tstamp>
-    </comp>
-    <comp ref="J2">
-      <value>Conn_01x02_Male</value>
-      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Connector" part="Conn_01x02_Male" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5C0082A2</tstamp>
-    </comp>
-    <comp ref="R8">
-      <value>CRM2512-JW-470ELF</value>
-      <footprint>Resistor_SMD:R_2512_6332Metric</footprint>
-      <datasheet>https://www.bourns.com/docs/Product-Datasheets/CRM.pdf</datasheet>
-      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5BD94E9D</tstamp>
-    </comp>
-    <comp ref="R7">
-      <value>RHC2512FT4R99</value>
-      <footprint>Resistor_SMD:R_2512_6332Metric</footprint>
-      <datasheet>https://www.seielect.com/Catalog/SEI-rhc.pdf</datasheet>
-      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5BDA4BFF</tstamp>
-    </comp>
-    <comp ref="R9">
-      <value>CR1206-FX-4990ELF</value>
-      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
-      <datasheet>https://www.bourns.com/docs/Product-Datasheets/CHPREZTR.pdf</datasheet>
-      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5BDB1249</tstamp>
-    </comp>
-    <comp ref="JP1">
-      <value>CAL_FUSE</value>
-      <footprint>Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Device" part="Jumper_NC_Small" description="Jumper, normally closed, small symbol"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5BDC1820</tstamp>
-    </comp>
-    <comp ref="J4">
-      <value>67996-408HLF</value>
-      <footprint>Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical</footprint>
-      <datasheet>https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/67996.pdf</datasheet>
-      <libsource lib="Connector_Generic" part="Conn_02x04_Odd_Even" description="Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5BDDF258</tstamp>
-    </comp>
     <comp ref="J5">
       <value>Conn_Coaxial</value>
       <footprint>Connector_Coaxial:BNC_TEConnectivity_1478204_Vertical</footprint>
@@ -173,44 +74,44 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BE24B1D</tstamp>
     </comp>
-    <comp ref="D1">
-      <value>BAS116LT1G</value>
-      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
-      <datasheet>http://www.onsemi.com/pub/Collateral/BAS116LT1-D.PDF</datasheet>
-      <libsource lib="Device" part="D_Schottky_AAK" description="Schottky diode, anode on pins 1 and 2"/>
+    <comp ref="J7">
+      <value> 36503505S  36003500S </value>
+      <footprint>RF_Shielding:Wuerth_36503505_50x50mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="RF_Shield_Two_Pieces" description="Two-piece EMI RF shielding cabinet"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5BE449D6</tstamp>
+      <tstamp>5C0A28DB</tstamp>
     </comp>
-    <comp ref="C22">
-      <value>0603B104M500CT </value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
-      <datasheet>http://www.passivecomponent.com/indexsea/ASC_General_Purpose.pdf</datasheet>
-      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+    <comp ref="J2">
+      <value>Conn_Coaxial</value>
+      <footprint>Connector_Coaxial:BNC_TEConnectivity_1478204_Vertical</footprint>
+      <datasheet> ~</datasheet>
+      <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5BE4E27A</tstamp>
+      <tstamp>5BD8CE6F</tstamp>
     </comp>
-    <comp ref="C23">
-      <value>0603B104M500CT </value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
-      <datasheet>http://www.passivecomponent.com/indexsea/ASC_General_Purpose.pdf</datasheet>
-      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+    <comp ref="J1">
+      <value>Conn_01x02_Male</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x02_Male" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5BE4F7D6</tstamp>
+      <tstamp>5BD8CE81</tstamp>
     </comp>
-    <comp ref="D2">
-      <value>BAS116LT1G</value>
-      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
-      <datasheet>http://www.onsemi.com/pub/Collateral/BAS116LT1-D.PDF</datasheet>
-      <libsource lib="Device" part="D_Schottky_AAK" description="Schottky diode, anode on pins 1 and 2"/>
+    <comp ref="J3">
+      <value>Conn_Coaxial</value>
+      <footprint>Connector_Coaxial:BNC_TEConnectivity_1478204_Vertical</footprint>
+      <datasheet> ~</datasheet>
+      <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5BE64BC4</tstamp>
+      <tstamp>5BD8CE8F</tstamp>
     </comp>
     <comp ref="Q1">
       <value> BC847BDW1T1G </value>
       <footprint>Package_TO_SOT_SMD:SOT-363_SC-70-6</footprint>
       <datasheet>http://www.onsemi.com/pub_link/Collateral/BC846BDW1T1-D.PDF</datasheet>
       <libsource lib="Transistor_BJT" part="BC847BDW1" description="100mA IC, 45V Vce, Dual NPN/NPN Transistors, SOT-363"/>
-      <sheetpath names="/InputStage/" tstamps="/5BCA1695/"/>
+      <sheetpath names="/InputAmplifier/" tstamps="/5BCA1695/"/>
       <tstamp>5BCA38AA</tstamp>
     </comp>
     <comp ref="R4">
@@ -218,7 +119,7 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>https://www.bourns.com/docs/Product-Datasheets/CHPREZTR.pdf</datasheet>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <sheetpath names="/InputStage/" tstamps="/5BCA1695/"/>
+      <sheetpath names="/InputAmplifier/" tstamps="/5BCA1695/"/>
       <tstamp>5BCA950A</tstamp>
     </comp>
     <comp ref="C8">
@@ -226,7 +127,7 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>https://katalog.we-online.de/pbs/datasheet/885012006038.pdf</datasheet>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
-      <sheetpath names="/InputStage/" tstamps="/5BCA1695/"/>
+      <sheetpath names="/InputAmplifier/" tstamps="/5BCA1695/"/>
       <tstamp>5BCA9E39</tstamp>
     </comp>
     <comp ref="C9">
@@ -234,7 +135,7 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>https://katalog.we-online.de/pbs/datasheet/885012006007.pdf</datasheet>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
-      <sheetpath names="/InputStage/" tstamps="/5BCA1695/"/>
+      <sheetpath names="/InputAmplifier/" tstamps="/5BCA1695/"/>
       <tstamp>5BCB2898</tstamp>
     </comp>
     <comp ref="R6">
@@ -242,7 +143,7 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>https://media.digikey.com/pdf/Data%20Sheets/Susumu%20PDFs/RG_RM_RGH_Oct2012.pdf</datasheet>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <sheetpath names="/InputStage/" tstamps="/5BCA1695/"/>
+      <sheetpath names="/InputAmplifier/" tstamps="/5BCA1695/"/>
       <tstamp>5BCA7B32</tstamp>
     </comp>
     <comp ref="RN1">
@@ -250,7 +151,7 @@
       <footprint>Resistor_SMD:R_Array_Convex_4x1206</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
-      <sheetpath names="/InputStage/" tstamps="/5BCA1695/"/>
+      <sheetpath names="/InputAmplifier/" tstamps="/5BCA1695/"/>
       <tstamp>5BD29D9F</tstamp>
     </comp>
     <comp ref="R2">
@@ -258,7 +159,7 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>https://www.digikey.com/Web%20Export/Common/icons/datasheet.png</datasheet>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <sheetpath names="/InputStage/" tstamps="/5BCA1695/"/>
+      <sheetpath names="/InputAmplifier/" tstamps="/5BCA1695/"/>
       <tstamp>5BE11010</tstamp>
     </comp>
     <comp ref="R1">
@@ -266,7 +167,7 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>https://www.seielect.com/Catalog/SEI-RNCF.pdf </datasheet>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <sheetpath names="/InputStage/" tstamps="/5BCA1695/"/>
+      <sheetpath names="/InputAmplifier/" tstamps="/5BCA1695/"/>
       <tstamp>5BE1B504</tstamp>
     </comp>
     <comp ref="U1">
@@ -274,7 +175,7 @@
       <footprint>Package_SO:MSOP-8_3x3mm_P0.65mm</footprint>
       <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/18189fb.pdf</datasheet>
       <libsource lib="Ntester_additional" part="LT1818" description="Single Operational Amplifi ers"/>
-      <sheetpath names="/InputStage/" tstamps="/5BCA1695/"/>
+      <sheetpath names="/InputAmplifier/" tstamps="/5BCA1695/"/>
       <tstamp>5BCA0F24</tstamp>
     </comp>
     <comp ref="R5">
@@ -282,7 +183,7 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>https://www.bourns.com/docs/Product-Datasheets/CHPREZTR.pdf</datasheet>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <sheetpath names="/InputStage/" tstamps="/5BCA1695/"/>
+      <sheetpath names="/InputAmplifier/" tstamps="/5BCA1695/"/>
       <tstamp>5BE457A7</tstamp>
     </comp>
     <comp ref="C10">
@@ -290,7 +191,7 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>http://www.passivecomponent.com/indexsea/ASC_General_Purpose.pdf</datasheet>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
-      <sheetpath names="/InputStage/" tstamps="/5BCA1695/"/>
+      <sheetpath names="/InputAmplifier/" tstamps="/5BCA1695/"/>
       <tstamp>5BE9375F</tstamp>
     </comp>
     <comp ref="C11">
@@ -298,7 +199,7 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>http://www.passivecomponent.com/indexsea/ASC_General_Purpose.pdf</datasheet>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
-      <sheetpath names="/InputStage/" tstamps="/5BCA1695/"/>
+      <sheetpath names="/InputAmplifier/" tstamps="/5BCA1695/"/>
       <tstamp>5BEB1862</tstamp>
     </comp>
     <comp ref="C12">
@@ -306,7 +207,7 @@
       <footprint>Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D</footprint>
       <datasheet>http://datasheetz.com/data/Capacitors/Tantalum/495-2226-1-datasheetz.html</datasheet>
       <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
-      <sheetpath names="/InputStage/" tstamps="/5BCA1695/"/>
+      <sheetpath names="/InputAmplifier/" tstamps="/5BCA1695/"/>
       <tstamp>5BF17F12</tstamp>
     </comp>
     <comp ref="C13">
@@ -314,7 +215,7 @@
       <footprint>Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D</footprint>
       <datasheet>http://datasheetz.com/data/Capacitors/Tantalum/495-2226-1-datasheetz.html</datasheet>
       <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
-      <sheetpath names="/InputStage/" tstamps="/5BCA1695/"/>
+      <sheetpath names="/InputAmplifier/" tstamps="/5BCA1695/"/>
       <tstamp>5BF17F23</tstamp>
     </comp>
     <comp ref="C14">
@@ -322,7 +223,7 @@
       <footprint>Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D</footprint>
       <datasheet>http://datasheetz.com/data/Capacitors/Tantalum/495-2226-1-datasheetz.html</datasheet>
       <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
-      <sheetpath names="/InputStage/" tstamps="/5BCA1695/"/>
+      <sheetpath names="/InputAmplifier/" tstamps="/5BCA1695/"/>
       <tstamp>5BF26AE6</tstamp>
     </comp>
     <comp ref="C3">
@@ -330,7 +231,7 @@
       <footprint>Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D</footprint>
       <datasheet>http://datasheetz.com/data/Capacitors/Tantalum/495-2226-1-datasheetz.html</datasheet>
       <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
-      <sheetpath names="/InputStage/" tstamps="/5BCA1695/"/>
+      <sheetpath names="/InputAmplifier/" tstamps="/5BCA1695/"/>
       <tstamp>5BF3B119</tstamp>
     </comp>
     <comp ref="C1">
@@ -338,7 +239,7 @@
       <footprint>Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D</footprint>
       <datasheet>http://datasheetz.com/data/Capacitors/Tantalum/495-2226-1-datasheetz.html</datasheet>
       <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
-      <sheetpath names="/InputStage/" tstamps="/5BCA1695/"/>
+      <sheetpath names="/InputAmplifier/" tstamps="/5BCA1695/"/>
       <tstamp>5BF3B123</tstamp>
     </comp>
     <comp ref="C16">
@@ -346,7 +247,7 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>http://www.passivecomponent.com/indexsea/ASC_General_Purpose.pdf</datasheet>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
-      <sheetpath names="/InputStage/" tstamps="/5BCA1695/"/>
+      <sheetpath names="/InputAmplifier/" tstamps="/5BCA1695/"/>
       <tstamp>5BF5FCAF</tstamp>
     </comp>
     <comp ref="C15">
@@ -354,16 +255,8 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>http://www.passivecomponent.com/indexsea/ASC_General_Purpose.pdf</datasheet>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
-      <sheetpath names="/InputStage/" tstamps="/5BCA1695/"/>
+      <sheetpath names="/InputAmplifier/" tstamps="/5BCA1695/"/>
       <tstamp>5BF6854A</tstamp>
-    </comp>
-    <comp ref="J3">
-      <value>RF_Shield_One_Piece</value>
-      <footprint>RF_Shielding:Wuerth_36103305_30x30mm</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Device" part="RF_Shield_One_Piece" description="One-piece EMI RF shielding cabinet"/>
-      <sheetpath names="/InputStage/" tstamps="/5BCA1695/"/>
-      <tstamp>5C011328</tstamp>
     </comp>
     <comp ref="U2">
       <value>LT6233</value>
@@ -412,12 +305,368 @@
       <sheetpath names="/GainBlock/" tstamps="/5C00C165/"/>
       <tstamp>5C030326</tstamp>
     </comp>
+    <comp ref="C24">
+      <value> ECW-FE2W475J</value>
+      <footprint>Capacitor_THT:C_Rect_L26.5mm_W11.5mm_P22.50mm_MKS4</footprint>
+      <datasheet>https://industrial.panasonic.com/cdbs/www-data/pdf/RDI0000/ABD0000C202.pdf</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/GainBlock/" tstamps="/5C00C165/"/>
+      <tstamp>5BD77030</tstamp>
+    </comp>
     <comp ref="C17">
-      <value>CP_Small</value>
+      <value>DNP</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/GainBlock/" tstamps="/5C00C165/"/>
+      <tstamp>5BD9E532</tstamp>
+    </comp>
+    <comp ref="C29">
+      <value> ECW-FE2W475J</value>
+      <footprint>Capacitor_THT:C_Rect_L26.5mm_W11.5mm_P22.50mm_MKS4</footprint>
+      <datasheet>https://industrial.panasonic.com/cdbs/www-data/pdf/RDI0000/ABD0000C202.pdf</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/GainBlock/" tstamps="/5C00C165/"/>
+      <tstamp>5BDB4DDA</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>LT6233</value>
+      <datasheet>http://cds.linear.com/docs/en/datasheet/623345fc.pdf</datasheet>
+      <libsource lib="Amplifier_Operational" part="LT6233" description="Dual 60MHz, Rail-to-Rail Output, 1.9nV/√Hz, 1.2mA, Operational Amplifier, SOIC-8"/>
+      <sheetpath names="/GainBlock/" tstamps="/5C00C165/"/>
+      <tstamp>5BDDFA94</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>R_Small</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/GainBlock/" tstamps="/5C00C165/"/>
+      <tstamp>5BE0F9FA</tstamp>
+    </comp>
+    <comp ref="C25">
+      <value>B45196-H2227-M409</value>
+      <footprint>Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D</footprint>
+      <datasheet>http://datasheetz.com/data/Capacitors/Tantalum/495-2226-1-datasheetz.html</datasheet>
       <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
       <sheetpath names="/GainBlock/" tstamps="/5C00C165/"/>
-      <tstamp>5C0427F2</tstamp>
+      <tstamp>5BEE77C0</tstamp>
+    </comp>
+    <comp ref="C28">
+      <value>B45196-H2227-M409</value>
+      <footprint>Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D</footprint>
+      <datasheet>http://datasheetz.com/data/Capacitors/Tantalum/495-2226-1-datasheetz.html</datasheet>
+      <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
+      <sheetpath names="/GainBlock/" tstamps="/5C00C165/"/>
+      <tstamp>5BEE77C9</tstamp>
+    </comp>
+    <comp ref="C26">
+      <value>0603B104M500CT </value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>http://www.passivecomponent.com/indexsea/ASC_General_Purpose.pdf</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/GainBlock/" tstamps="/5C00C165/"/>
+      <tstamp>5BEE77CF</tstamp>
+    </comp>
+    <comp ref="C27">
+      <value>0603B104M500CT </value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>http://www.passivecomponent.com/indexsea/ASC_General_Purpose.pdf</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/GainBlock/" tstamps="/5C00C165/"/>
+      <tstamp>5BEE77DC</tstamp>
+    </comp>
+    <comp ref="C32">
+      <value>DNP</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/GainBlock/" tstamps="/5C00C165/"/>
+      <tstamp>5BEFF035</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>LT1363</value>
+      <datasheet>http://cds.linear.com/docs/en/datasheet/1363fa.pdf</datasheet>
+      <libsource lib="Amplifier_Operational" part="LT1363" description="70MHz, 1000V/µs Operational Amplifier, DIP-8/SOIC-8"/>
+      <sheetpath names="/GainBlock/" tstamps="/5C00C165/"/>
+      <tstamp>5BF424E9</tstamp>
+    </comp>
+    <comp ref="C35">
+      <value>B45196-H2227-M409</value>
+      <footprint>Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D</footprint>
+      <datasheet>http://datasheetz.com/data/Capacitors/Tantalum/495-2226-1-datasheetz.html</datasheet>
+      <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
+      <sheetpath names="/GainBlock/" tstamps="/5C00C165/"/>
+      <tstamp>5BF761FC</tstamp>
+    </comp>
+    <comp ref="C36">
+      <value>B45196-H2227-M409</value>
+      <footprint>Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D</footprint>
+      <datasheet>http://datasheetz.com/data/Capacitors/Tantalum/495-2226-1-datasheetz.html</datasheet>
+      <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
+      <sheetpath names="/GainBlock/" tstamps="/5C00C165/"/>
+      <tstamp>5BF7620D</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>LT1363</value>
+      <datasheet>http://cds.linear.com/docs/en/datasheet/1363fa.pdf</datasheet>
+      <libsource lib="Amplifier_Operational" part="LT1363" description="70MHz, 1000V/µs Operational Amplifier, DIP-8/SOIC-8"/>
+      <sheetpath names="/GainBlock/" tstamps="/5C00C165/"/>
+      <tstamp>5BFAC373</tstamp>
+    </comp>
+    <comp ref="R21">
+      <value>R_Small</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/GainBlock/" tstamps="/5C00C165/"/>
+      <tstamp>5BFC2C24</tstamp>
+    </comp>
+    <comp ref="C30">
+      <value>C_Small</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/GainBlock/" tstamps="/5C00C165/"/>
+      <tstamp>5BFE9105</tstamp>
+    </comp>
+    <comp ref="C37">
+      <value>B45196-H2227-M409</value>
+      <footprint>Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D</footprint>
+      <datasheet>http://datasheetz.com/data/Capacitors/Tantalum/495-2226-1-datasheetz.html</datasheet>
+      <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
+      <sheetpath names="/GainBlock/" tstamps="/5C00C165/"/>
+      <tstamp>5C06C713</tstamp>
+    </comp>
+    <comp ref="C38">
+      <value>B45196-H2227-M409</value>
+      <footprint>Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D</footprint>
+      <datasheet>http://datasheetz.com/data/Capacitors/Tantalum/495-2226-1-datasheetz.html</datasheet>
+      <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
+      <sheetpath names="/GainBlock/" tstamps="/5C00C165/"/>
+      <tstamp>5C06C71F</tstamp>
+    </comp>
+    <comp ref="R22">
+      <value>R_Small</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/GainBlock/" tstamps="/5C00C165/"/>
+      <tstamp>5C06C725</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>R_Small</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/GainBlock/" tstamps="/5C00C165/"/>
+      <tstamp>5C0D2FEA</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>R_Small</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/GainBlock/" tstamps="/5C00C165/"/>
+      <tstamp>5C0D4275</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>R_Small</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/GainBlock/" tstamps="/5C00C165/"/>
+      <tstamp>5C0D48F5</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>R_Small</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/GainBlock/" tstamps="/5C00C165/"/>
+      <tstamp>5C0D5157</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>R_Small</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/GainBlock/" tstamps="/5C00C165/"/>
+      <tstamp>5C0D5746</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>R_Small</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/GainBlock/" tstamps="/5C00C165/"/>
+      <tstamp>5C0D8634</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>R_Small</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/GainBlock/" tstamps="/5C00C165/"/>
+      <tstamp>5C0D8DC4</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>R_Small</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/GainBlock/" tstamps="/5C00C165/"/>
+      <tstamp>5C0D9608</tstamp>
+    </comp>
+    <comp ref="C31">
+      <value>C_Small</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/GainBlock/" tstamps="/5C00C165/"/>
+      <tstamp>5C0F05AE</tstamp>
+    </comp>
+    <comp ref="C34">
+      <value>C_Small</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/GainBlock/" tstamps="/5C00C165/"/>
+      <tstamp>5C0F0E6F</tstamp>
+    </comp>
+    <comp ref="C33">
+      <value>C_Small</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/GainBlock/" tstamps="/5C00C165/"/>
+      <tstamp>5C0F171F</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>B45196-H2227-M409</value>
+      <footprint>Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D</footprint>
+      <datasheet>http://datasheetz.com/data/Capacitors/Tantalum/495-2226-1-datasheetz.html</datasheet>
+      <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
+      <sheetpath names="/InputStage/" tstamps="/5BD77D91/"/>
+      <tstamp>5BD8655C</tstamp>
+    </comp>
+    <comp ref="FB1">
+      <value>742792651 </value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://katalog.we-online.de/pbs/datasheet/742792651.pdf</datasheet>
+      <libsource lib="Device" part="Ferrite_Bead_Small" description="Ferrite bead, small symbol"/>
+      <sheetpath names="/InputStage/" tstamps="/5BD77D91/"/>
+      <tstamp>5BD86585</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>885012006007</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://katalog.we-online.de/pbs/datasheet/885012006007.pdf</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/InputStage/" tstamps="/5BD77D91/"/>
+      <tstamp>5BD86592</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>B45196-H2227-M409</value>
+      <footprint>Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D</footprint>
+      <datasheet>http://datasheetz.com/data/Capacitors/Tantalum/495-2226-1-datasheetz.html</datasheet>
+      <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
+      <sheetpath names="/InputStage/" tstamps="/5BD77D91/"/>
+      <tstamp>5BD865A4</tstamp>
+    </comp>
+    <comp ref="C22">
+      <value>B45196-H2227-M409</value>
+      <footprint>Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D</footprint>
+      <datasheet>http://datasheetz.com/data/Capacitors/Tantalum/495-2226-1-datasheetz.html</datasheet>
+      <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
+      <sheetpath names="/InputStage/" tstamps="/5BD77D91/"/>
+      <tstamp>5BD865AA</tstamp>
+    </comp>
+    <comp ref="C23">
+      <value>DNP</value>
+      <footprint>Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D</footprint>
+      <datasheet>http://datasheetz.com/data/Capacitors/Tantalum/495-2226-1-datasheetz.html</datasheet>
+      <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
+      <sheetpath names="/InputStage/" tstamps="/5BD77D91/"/>
+      <tstamp>5BD865B0</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>CRM2512-JW-470ELF</value>
+      <footprint>Resistor_SMD:R_2512_6332Metric</footprint>
+      <datasheet>https://www.bourns.com/docs/Product-Datasheets/CRM.pdf</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/InputStage/" tstamps="/5BD77D91/"/>
+      <tstamp>5BD865D9</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>RHC2512FT4R99</value>
+      <footprint>Resistor_SMD:R_2512_6332Metric</footprint>
+      <datasheet>https://www.seielect.com/Catalog/SEI-rhc.pdf</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/InputStage/" tstamps="/5BD77D91/"/>
+      <tstamp>5BD865E5</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>CR1206-FX-4990ELF</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://www.bourns.com/docs/Product-Datasheets/CHPREZTR.pdf</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/InputStage/" tstamps="/5BD77D91/"/>
+      <tstamp>5BD86605</tstamp>
+    </comp>
+    <comp ref="JP1">
+      <value>CAL_FUSE</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Jumper_NC_Small" description="Jumper, normally closed, small symbol"/>
+      <sheetpath names="/InputStage/" tstamps="/5BD77D91/"/>
+      <tstamp>5BD8660E</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>67996-408HLF</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical</footprint>
+      <datasheet>https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/67996.pdf</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_02x04_Odd_Even" description="Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/InputStage/" tstamps="/5BD77D91/"/>
+      <tstamp>5BD86616</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>BAS116LT1G</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.onsemi.com/pub/Collateral/BAS116LT1-D.PDF</datasheet>
+      <libsource lib="Device" part="D_Schottky_AAK" description="Schottky diode, anode on pins 1 and 2"/>
+      <sheetpath names="/InputStage/" tstamps="/5BD77D91/"/>
+      <tstamp>5BD8661C</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>BAS116LT1G</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.onsemi.com/pub/Collateral/BAS116LT1-D.PDF</datasheet>
+      <libsource lib="Device" part="D_Schottky_AAK" description="Schottky diode, anode on pins 1 and 2"/>
+      <sheetpath names="/InputStage/" tstamps="/5BD77D91/"/>
+      <tstamp>5BD8662D</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value> RMCF0603FT499R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/InputStage/" tstamps="/5BD77D91/"/>
+      <tstamp>5BD8663D</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>0603B104M500CT </value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>http://www.passivecomponent.com/indexsea/ASC_General_Purpose.pdf</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/InputStage/" tstamps="/5BD77D91/"/>
+      <tstamp>5BDB2494</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>0603B104M500CT </value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>http://www.passivecomponent.com/indexsea/ASC_General_Purpose.pdf</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/InputStage/" tstamps="/5BD77D91/"/>
+      <tstamp>5BDB24A8</tstamp>
     </comp>
   </components>
   <libparts>
@@ -510,6 +759,34 @@
         <pin num="8" name="V+" type="power_in"/>
       </pins>
     </libpart>
+    <libpart lib="Amplifier_Operational" part="OP07">
+      <aliases>
+        <alias>OP77</alias>
+        <alias>LT1363</alias>
+        <alias>OPA134</alias>
+      </aliases>
+      <description>Single Ultra-Low Offset Voltage Operational Amplifier, DIP-8/SOIC-8</description>
+      <docs>http://www.analog.com/media/en/technical-documentation/data-sheets/OP07.pdf</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>SOIC*3.9x4.9mm*P1.27mm*</fp>
+        <fp>TO*99*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">OP07</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VOS" type="input"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="V-" type="power_in"/>
+        <pin num="5" name="NC" type="NotConnected"/>
+        <pin num="6" name="~" type="output"/>
+        <pin num="7" name="V+" type="power_in"/>
+        <pin num="8" name="VOS" type="input"/>
+      </pins>
+    </libpart>
     <libpart lib="Connector" part="Conn_01x02_Male">
       <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
       <docs>~</docs>
@@ -563,6 +840,21 @@
         <pin num="6" name="Pin_6" type="passive"/>
         <pin num="7" name="Pin_7" type="passive"/>
         <pin num="8" name="Pin_8" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Device" part="CP_Small">
@@ -643,12 +935,12 @@
         <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Device" part="RF_Shield_One_Piece">
-      <description>One-piece EMI RF shielding cabinet</description>
+    <libpart lib="Device" part="RF_Shield_Two_Pieces">
+      <description>Two-piece EMI RF shielding cabinet</description>
       <docs>~</docs>
       <fields>
         <field name="Reference">J</field>
-        <field name="Value">RF_Shield_One_Piece</field>
+        <field name="Value">RF_Shield_Two_Pieces</field>
       </fields>
       <pins>
         <pin num="1" name="Shield" type="passive"/>
@@ -769,198 +1061,306 @@
     </library>
   </libraries>
   <nets>
-    <net code="1" name="Net-(J4-Pad8)">
-      <node ref="JP1" pin="1"/>
-      <node ref="J4" pin="8"/>
-    </net>
-    <net code="2" name="Net-(J4-Pad4)">
-      <node ref="J4" pin="4"/>
-      <node ref="R8" pin="1"/>
-    </net>
-    <net code="3" name="Net-(J5-Pad1)">
-      <node ref="J5" pin="1"/>
-    </net>
-    <net code="4" name="GND">
-      <node ref="J1" pin="2"/>
-      <node ref="R2" pin="1"/>
-      <node ref="C4" pin="2"/>
-      <node ref="J2" pin="2"/>
-      <node ref="R3" pin="2"/>
-      <node ref="C23" pin="2"/>
-      <node ref="J6" pin="2"/>
-      <node ref="R8" pin="2"/>
-      <node ref="C11" pin="1"/>
-      <node ref="C10" pin="2"/>
-      <node ref="C1" pin="1"/>
+    <net code="1" name="GND">
       <node ref="C16" pin="2"/>
       <node ref="C15" pin="1"/>
-      <node ref="C3" pin="2"/>
-      <node ref="R7" pin="2"/>
-      <node ref="R9" pin="2"/>
-      <node ref="C22" pin="2"/>
-      <node ref="J5" pin="2"/>
-      <node ref="C21" pin="2"/>
-      <node ref="JP1" pin="2"/>
-      <node ref="C18" pin="1"/>
-      <node ref="C20" pin="1"/>
-      <node ref="C19" pin="2"/>
-    </net>
-    <net code="5" name="Net-(J4-Pad6)">
-      <node ref="R7" pin="1"/>
-      <node ref="J4" pin="6"/>
-    </net>
-    <net code="6" name="Net-(J4-Pad2)">
-      <node ref="R9" pin="1"/>
-      <node ref="J4" pin="2"/>
-    </net>
-    <net code="7" name="+5V">
-      <node ref="C10" pin="1"/>
-      <node ref="C21" pin="1"/>
-      <node ref="RN1" pin="6"/>
-      <node ref="RN1" pin="5"/>
-      <node ref="U1" pin="7"/>
-      <node ref="C19" pin="1"/>
-      <node ref="C3" pin="1"/>
-      <node ref="C16" pin="1"/>
-      <node ref="U2" pin="8"/>
-      <node ref="C23" pin="1"/>
-      <node ref="D1" pin="3"/>
-      <node ref="C22" pin="1"/>
-    </net>
-    <net code="8" name="Net-(D2-Pad2)">
-      <node ref="D2" pin="2"/>
-    </net>
-    <net code="9" name="-5V">
-      <node ref="RN1" pin="8"/>
-      <node ref="C15" pin="2"/>
-      <node ref="U1" pin="4"/>
-      <node ref="D2" pin="3"/>
-      <node ref="C1" pin="2"/>
-      <node ref="C11" pin="2"/>
-      <node ref="U2" pin="4"/>
-      <node ref="C20" pin="2"/>
-      <node ref="C18" pin="2"/>
-    </net>
-    <net code="10" name="Net-(J6-Pad1)">
-      <node ref="J6" pin="1"/>
-    </net>
-    <net code="11" name="Net-(D1-Pad2)">
-      <node ref="D1" pin="2"/>
-    </net>
-    <net code="12" name="/InputStage/OUT_SIG">
-      <node ref="R6" pin="1"/>
-    </net>
-    <net code="13" name="Net-(FB1-Pad2)">
-      <node ref="J1" pin="1"/>
-      <node ref="J2" pin="1"/>
-      <node ref="FB1" pin="2"/>
-    </net>
-    <net code="14" name="Net-(C2-Pad1)">
-      <node ref="C4" pin="1"/>
-      <node ref="C2" pin="1"/>
-      <node ref="FB1" pin="1"/>
-      <node ref="D1" pin="1"/>
-      <node ref="C7" pin="1"/>
-      <node ref="D2" pin="1"/>
-      <node ref="J4" pin="5"/>
-      <node ref="J4" pin="3"/>
-      <node ref="J4" pin="1"/>
-      <node ref="J4" pin="7"/>
-      <node ref="C5" pin="1"/>
-      <node ref="C6" pin="1"/>
-    </net>
-    <net code="15" name="/InputStage/IN_SIG">
-      <node ref="Q1" pin="2"/>
-      <node ref="R3" pin="1"/>
-      <node ref="RN1" pin="2"/>
-      <node ref="C5" pin="2"/>
+      <node ref="C26" pin="2"/>
+      <node ref="C28" pin="1"/>
+      <node ref="C25" pin="2"/>
+      <node ref="C34" pin="2"/>
+      <node ref="C31" pin="2"/>
+      <node ref="U3" pin="3"/>
+      <node ref="C10" pin="2"/>
       <node ref="C2" pin="2"/>
-      <node ref="RN1" pin="7"/>
+      <node ref="R9" pin="2"/>
+      <node ref="C1" pin="1"/>
+      <node ref="R3" pin="2"/>
+      <node ref="R7" pin="2"/>
+      <node ref="R2" pin="1"/>
+      <node ref="R8" pin="2"/>
+      <node ref="JP1" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="J5" pin="2"/>
+      <node ref="R12" pin="1"/>
+      <node ref="R22" pin="2"/>
+      <node ref="J6" pin="2"/>
+      <node ref="C27" pin="2"/>
+      <node ref="J2" pin="2"/>
+      <node ref="J1" pin="2"/>
+      <node ref="J3" pin="2"/>
+      <node ref="C19" pin="2"/>
+      <node ref="C11" pin="1"/>
+      <node ref="C18" pin="1"/>
+      <node ref="U2" pin="3"/>
+      <node ref="C21" pin="2"/>
+      <node ref="C20" pin="2"/>
+      <node ref="R21" pin="2"/>
+      <node ref="J7" pin="1"/>
+    </net>
+    <net code="2" name="/InputStage/IN_STG">
+      <node ref="J1" pin="1"/>
+      <node ref="FB1" pin="2"/>
+      <node ref="J3" pin="1"/>
+      <node ref="J2" pin="1"/>
+    </net>
+    <net code="3" name="/InputAmplifier/IN_AMP">
       <node ref="C7" pin="2"/>
+      <node ref="C22" pin="2"/>
+      <node ref="C23" pin="2"/>
       <node ref="C6" pin="2"/>
+      <node ref="R9" pin="1"/>
+      <node ref="RN1" pin="7"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="RN1" pin="2"/>
     </net>
-    <net code="16" name="/GainBlock/GB_IN">
-      <node ref="R10" pin="1"/>
+    <net code="4" name="/GainBlock/GB_IN">
       <node ref="U2" pin="2"/>
+      <node ref="R10" pin="1"/>
+      <node ref="R6" pin="1"/>
+      <node ref="C17" pin="2"/>
     </net>
-    <net code="19" name="Net-(C12-Pad2)">
-      <node ref="C13" pin="2"/>
-      <node ref="C12" pin="2"/>
+    <net code="5" name="/GainBlock/WB_OUT">
+      <node ref="R21" pin="1"/>
+      <node ref="J5" pin="1"/>
+      <node ref="C36" pin="2"/>
+      <node ref="C35" pin="2"/>
+    </net>
+    <net code="6" name="/GainBlock/1MHZ_OUT">
+      <node ref="C38" pin="2"/>
+      <node ref="J6" pin="1"/>
+      <node ref="C37" pin="2"/>
+      <node ref="R22" pin="1"/>
+    </net>
+    <net code="7" name="Net-(C12-Pad2)">
       <node ref="C14" pin="2"/>
       <node ref="R6" pin="2"/>
+      <node ref="C13" pin="2"/>
+      <node ref="C12" pin="2"/>
     </net>
-    <net code="20" name="Net-(R5-Pad1)">
+    <net code="8" name="Net-(U1-Pad8)">
+      <node ref="U1" pin="8"/>
+    </net>
+    <net code="9" name="Net-(R5-Pad1)">
       <node ref="U1" pin="3"/>
       <node ref="R5" pin="1"/>
     </net>
-    <net code="21" name="Net-(J3-Pad1)">
-      <node ref="J3" pin="1"/>
-    </net>
-    <net code="22" name="Net-(C9-Pad2)">
+    <net code="10" name="Net-(C9-Pad2)">
       <node ref="R4" pin="1"/>
       <node ref="C9" pin="2"/>
       <node ref="U1" pin="2"/>
     </net>
-    <net code="23" name="/InputStage/R_LTP2">
-      <node ref="R5" pin="2"/>
-      <node ref="C8" pin="1"/>
-      <node ref="Q1" pin="3"/>
-      <node ref="RN1" pin="3"/>
+    <net code="11" name="-5V">
+      <node ref="C28" pin="2"/>
+      <node ref="D2" pin="3"/>
+      <node ref="U3" pin="4"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C15" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="C18" pin="2"/>
+      <node ref="U2" pin="4"/>
+      <node ref="C27" pin="1"/>
+      <node ref="C5" pin="1"/>
+      <node ref="C20" pin="1"/>
+      <node ref="RN1" pin="8"/>
+      <node ref="U1" pin="4"/>
     </net>
-    <net code="24" name="/InputStage/R_LTP0">
-      <node ref="Q1" pin="6"/>
-      <node ref="RN1" pin="4"/>
-      <node ref="R4" pin="2"/>
-      <node ref="C8" pin="2"/>
-    </net>
-    <net code="25" name="Net-(Q1-Pad5)">
-      <node ref="Q1" pin="5"/>
-      <node ref="R2" pin="2"/>
+    <net code="12" name="Net-(Q1-Pad5)">
       <node ref="R1" pin="1"/>
+      <node ref="R2" pin="2"/>
+      <node ref="Q1" pin="5"/>
     </net>
-    <net code="26" name="Net-(C12-Pad1)">
+    <net code="13" name="/InputAmplifier/R_LTP0">
+      <node ref="RN1" pin="4"/>
+      <node ref="C8" pin="2"/>
+      <node ref="Q1" pin="6"/>
+      <node ref="R4" pin="2"/>
+    </net>
+    <net code="14" name="Net-(C12-Pad1)">
+      <node ref="U1" pin="6"/>
+      <node ref="R1" pin="2"/>
+      <node ref="C9" pin="1"/>
+      <node ref="C12" pin="1"/>
       <node ref="C14" pin="1"/>
       <node ref="C13" pin="1"/>
-      <node ref="C12" pin="1"/>
-      <node ref="U1" pin="6"/>
-      <node ref="C9" pin="1"/>
-      <node ref="R1" pin="2"/>
     </net>
-    <net code="27" name="Net-(U1-Pad1)">
+    <net code="15" name="Net-(U1-Pad1)">
       <node ref="U1" pin="1"/>
     </net>
-    <net code="28" name="Net-(U1-Pad5)">
+    <net code="16" name="Net-(U1-Pad5)">
       <node ref="U1" pin="5"/>
     </net>
-    <net code="29" name="Net-(U1-Pad8)">
-      <node ref="U1" pin="8"/>
+    <net code="17" name="+5V">
+      <node ref="U3" pin="8"/>
+      <node ref="C26" pin="1"/>
+      <node ref="C10" pin="1"/>
+      <node ref="C25" pin="1"/>
+      <node ref="RN1" pin="6"/>
+      <node ref="RN1" pin="5"/>
+      <node ref="C3" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="C21" pin="1"/>
+      <node ref="C19" pin="1"/>
+      <node ref="C16" pin="1"/>
+      <node ref="U2" pin="8"/>
+      <node ref="D1" pin="3"/>
+      <node ref="U1" pin="7"/>
     </net>
-    <net code="30" name="/InputStage/R_LTP5">
+    <net code="18" name="/InputAmplifier/R_LTP2">
+      <node ref="Q1" pin="3"/>
+      <node ref="C8" pin="1"/>
+      <node ref="R5" pin="2"/>
+      <node ref="RN1" pin="3"/>
+    </net>
+    <net code="19" name="/InputAmplifier/R_LTP5">
       <node ref="Q1" pin="4"/>
-      <node ref="Q1" pin="1"/>
       <node ref="RN1" pin="1"/>
+      <node ref="Q1" pin="1"/>
     </net>
-    <net code="31" name="Net-(R10-Pad2)">
-      <node ref="U2" pin="1"/>
-      <node ref="R10" pin="2"/>
+    <net code="20" name="Net-(J4-Pad6)">
+      <node ref="J4" pin="6"/>
+      <node ref="R3" pin="1"/>
     </net>
-    <net code="32" name="Net-(U2-Pad3)">
-      <node ref="U2" pin="3"/>
+    <net code="21" name="Net-(J4-Pad2)">
+      <node ref="R8" pin="1"/>
+      <node ref="J4" pin="2"/>
     </net>
-    <net code="33" name="Net-(C17-Pad1)">
-      <node ref="C17" pin="1"/>
+    <net code="22" name="Net-(J4-Pad8)">
+      <node ref="JP1" pin="1"/>
+      <node ref="J4" pin="8"/>
     </net>
-    <net code="34" name="Net-(C17-Pad2)">
-      <node ref="C17" pin="2"/>
+    <net code="23" name="Net-(J4-Pad4)">
+      <node ref="R7" pin="1"/>
+      <node ref="J4" pin="4"/>
     </net>
-    <net code="35" name="Net-(U2-Pad5)">
+    <net code="24" name="Net-(C2-Pad1)">
+      <node ref="J4" pin="1"/>
+      <node ref="J4" pin="3"/>
+      <node ref="C7" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="FB1" pin="1"/>
+      <node ref="D2" pin="1"/>
+      <node ref="C22" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="J4" pin="7"/>
+      <node ref="J4" pin="5"/>
+      <node ref="C23" pin="1"/>
+    </net>
+    <net code="25" name="Net-(D2-Pad2)">
+      <node ref="D2" pin="2"/>
+    </net>
+    <net code="26" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="27" name="Net-(R14-Pad1)">
+      <node ref="R17" pin="2"/>
+      <node ref="R14" pin="1"/>
+    </net>
+    <net code="28" name="Net-(C32-Pad1)">
+      <node ref="U4" pin="3"/>
+      <node ref="U3" pin="1"/>
+      <node ref="R17" pin="1"/>
+      <node ref="C32" pin="1"/>
+      <node ref="R13" pin="1"/>
+    </net>
+    <net code="29" name="Net-(C33-Pad1)">
+      <node ref="C33" pin="1"/>
+      <node ref="U5" pin="6"/>
+      <node ref="U5" pin="2"/>
+      <node ref="C38" pin="1"/>
+      <node ref="C37" pin="1"/>
+    </net>
+    <net code="30" name="Net-(C34-Pad1)">
+      <node ref="R19" pin="2"/>
+      <node ref="C34" pin="1"/>
+      <node ref="U5" pin="3"/>
+    </net>
+    <net code="31" name="Net-(C31-Pad1)">
+      <node ref="C31" pin="1"/>
+      <node ref="U3" pin="5"/>
+      <node ref="R15" pin="2"/>
+    </net>
+    <net code="32" name="Net-(C30-Pad2)">
+      <node ref="R13" pin="2"/>
+      <node ref="R15" pin="1"/>
+      <node ref="C30" pin="2"/>
+    </net>
+    <net code="33" name="Net-(C29-Pad1)">
       <node ref="U2" pin="5"/>
+      <node ref="C29" pin="1"/>
+      <node ref="R12" pin="2"/>
     </net>
-    <net code="36" name="Net-(U2-Pad6)">
+    <net code="34" name="Net-(R11-Pad2)">
+      <node ref="R16" pin="2"/>
       <node ref="U2" pin="6"/>
-    </net>
-    <net code="37" name="Net-(U2-Pad7)">
+      <node ref="R11" pin="2"/>
       <node ref="U2" pin="7"/>
+    </net>
+    <net code="35" name="Net-(C17-Pad1)">
+      <node ref="C17" pin="1"/>
+      <node ref="R10" pin="2"/>
+      <node ref="U2" pin="1"/>
+      <node ref="C24" pin="2"/>
+    </net>
+    <net code="36" name="Net-(C24-Pad1)">
+      <node ref="R11" pin="1"/>
+      <node ref="C29" pin="2"/>
+      <node ref="C24" pin="1"/>
+    </net>
+    <net code="37" name="Net-(C35-Pad1)">
+      <node ref="U4" pin="2"/>
+      <node ref="U4" pin="6"/>
+      <node ref="C36" pin="1"/>
+      <node ref="C35" pin="1"/>
+    </net>
+    <net code="38" name="Net-(U4-Pad8)">
+      <node ref="U4" pin="8"/>
+    </net>
+    <net code="39" name="Net-(U4-Pad7)">
+      <node ref="U4" pin="7"/>
+    </net>
+    <net code="40" name="Net-(U4-Pad5)">
+      <node ref="U4" pin="5"/>
+    </net>
+    <net code="41" name="Net-(U5-Pad5)">
+      <node ref="U5" pin="5"/>
+    </net>
+    <net code="42" name="Net-(U5-Pad8)">
+      <node ref="U5" pin="8"/>
+    </net>
+    <net code="43" name="Net-(U5-Pad7)">
+      <node ref="U5" pin="7"/>
+    </net>
+    <net code="44" name="Net-(U4-Pad4)">
+      <node ref="U4" pin="4"/>
+    </net>
+    <net code="45" name="Net-(U5-Pad4)">
+      <node ref="U5" pin="4"/>
+    </net>
+    <net code="46" name="Net-(U5-Pad1)">
+      <node ref="U5" pin="1"/>
+    </net>
+    <net code="47" name="Net-(C32-Pad2)">
+      <node ref="R14" pin="2"/>
+      <node ref="U3" pin="2"/>
+      <node ref="C32" pin="2"/>
+      <node ref="R16" pin="1"/>
+    </net>
+    <net code="48" name="Net-(U4-Pad1)">
+      <node ref="U4" pin="1"/>
+    </net>
+    <net code="49" name="Net-(C33-Pad2)">
+      <node ref="R18" pin="2"/>
+      <node ref="R19" pin="1"/>
+      <node ref="C33" pin="2"/>
+    </net>
+    <net code="50" name="Net-(C30-Pad1)">
+      <node ref="R18" pin="1"/>
+      <node ref="U3" pin="7"/>
+      <node ref="U3" pin="6"/>
+      <node ref="C30" pin="1"/>
     </net>
   </nets>
 </export>

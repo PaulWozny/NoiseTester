@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -17,77 +17,11 @@ $EndDescr
 $Sheet
 S 5900 1750 1650 900 
 U 5BCA1695
-F0 "InputStage" 79
-F1 "InStage.sch" 39
-F2 "IN_SIG" I L 5900 2250 50 
-F3 "OUT_SIG" I R 7550 2250 50 
+F0 "InputAmplifier" 79
+F1 "InAmp.sch" 39
+F2 "IN_AMP" I L 5900 2250 50 
+F3 "OUT_AMP" I R 7550 2250 50 
 $EndSheet
-$Comp
-L Device:CP_Small C?
-U 1 1 5BE83E7D
-P 4000 1200
-AR Path="/5BCA1695/5BE83E7D" Ref="C?"  Part="1" 
-AR Path="/5BE83E7D" Ref="C2"  Part="1" 
-F 0 "C2" V 4225 1200 50  0000 C CNN
-F 1 "B45196-H2227-M409" V 4134 1200 50  0000 C CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D" H 4000 1200 50  0001 C CNN
-F 3 "http://datasheetz.com/data/Capacitors/Tantalum/495-2226-1-datasheetz.html" H 4000 1200 50  0001 C CNN
-	1    4000 1200
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4100 1200 4550 1200
-Wire Wire Line
-	4550 1200 4550 1550
-Wire Wire Line
-	4550 2250 4100 2250
-Wire Wire Line
-	4100 1900 4550 1900
-Connection ~ 4550 1900
-Wire Wire Line
-	4550 1900 4550 2250
-Wire Wire Line
-	4550 1550 4100 1550
-Connection ~ 4550 1550
-Wire Wire Line
-	4550 1550 4550 1900
-Wire Wire Line
-	3900 1200 3450 1200
-Wire Wire Line
-	3450 1200 3450 1550
-Wire Wire Line
-	3450 2250 3900 2250
-Wire Wire Line
-	3900 1900 3450 1900
-Wire Wire Line
-	3450 1550 3900 1550
-Wire Wire Line
-	3450 1550 3450 1900
-Connection ~ 3450 1550
-Wire Wire Line
-	3450 1900 3450 2250
-Connection ~ 3450 1900
-Connection ~ 4550 2250
-Connection ~ 3450 2250
-Text Notes 3800 900  0    50   ~ 0
-220uF/10V
-$Comp
-L power:GND #PWR?
-U 1 1 5BE83ECC
-P 4550 3200
-AR Path="/5BCA1695/5BE83ECC" Ref="#PWR?"  Part="1" 
-AR Path="/5BE83ECC" Ref="#PWR0105"  Part="1" 
-F 0 "#PWR0105" H 4550 2950 50  0001 C CNN
-F 1 "GND" H 4555 3027 50  0000 C CNN
-F 2 "" H 4550 3200 50  0001 C CNN
-F 3 "" H 4550 3200 50  0001 C CNN
-	1    4550 3200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4550 3200 4550 3000
-Wire Wire Line
-	4550 2800 4550 2250
 Text Notes 8000 1150 0    157  ~ 0
 TODO:\ncheck polarization of caps\nchange value of caps 100uF->220uF\nchange resitors 06->04
 Wire Notes Line
@@ -116,160 +50,6 @@ Wire Notes Line
 	5850 4800 5850 5600
 Wire Notes Line
 	5350 5200 5850 5200
-$Comp
-L Connector:Conn_Coaxial J1
-U 1 1 5BEF46A5
-P 850 2250
-F 0 "J1" H 778 2488 50  0000 C CNN
-F 1 "Conn_Coaxial" H 778 2397 50  0000 C CNN
-F 2 "Connector_Coaxial:BNC_TEConnectivity_1478204_Vertical" H 850 2250 50  0001 C CNN
-F 3 " ~" H 850 2250 50  0001 C CNN
-	1    850  2250
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:Ferrite_Bead_Small FB1
-U 1 1 5BEF4FAC
-P 1850 2250
-F 0 "FB1" V 1613 2250 50  0000 C CNN
-F 1 "742792651 " V 1704 2250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1780 2250 50  0001 C CNN
-F 3 "https://katalog.we-online.de/pbs/datasheet/742792651.pdf" H 1850 2250 50  0001 C CNN
-	1    1850 2250
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5BEFB78A
-P 850 2800
-AR Path="/5BCA1695/5BEFB78A" Ref="#PWR?"  Part="1" 
-AR Path="/5BEFB78A" Ref="#PWR0110"  Part="1" 
-F 0 "#PWR0110" H 850 2550 50  0001 C CNN
-F 1 "GND" H 855 2627 50  0000 C CNN
-F 2 "" H 850 2800 50  0001 C CNN
-F 3 "" H 850 2800 50  0001 C CNN
-	1    850  2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	850  2800 850  2450
-Wire Wire Line
-	1050 2250 1550 2250
-$Comp
-L Device:C_Small C?
-U 1 1 5BF00591
-P 2100 2600
-AR Path="/5BCA1695/5BF00591" Ref="C?"  Part="1" 
-AR Path="/5BF00591" Ref="C4"  Part="1" 
-F 0 "C4" V 1871 2600 50  0000 C CNN
-F 1 "885012006007" V 1962 2600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2100 2600 50  0001 C CNN
-F 3 "https://katalog.we-online.de/pbs/datasheet/885012006007.pdf" H 2100 2600 50  0001 C CNN
-	1    2100 2600
-	1    0    0    -1  
-$EndComp
-Text Notes 1850 2500 3    50   ~ 0
-68p
-Wire Wire Line
-	1950 2250 2100 2250
-Wire Wire Line
-	2100 2250 2100 2500
-$Comp
-L power:GND #PWR?
-U 1 1 5BF0763A
-P 2100 2850
-AR Path="/5BCA1695/5BF0763A" Ref="#PWR?"  Part="1" 
-AR Path="/5BF0763A" Ref="#PWR0111"  Part="1" 
-F 0 "#PWR0111" H 2100 2600 50  0001 C CNN
-F 1 "GND" H 2105 2677 50  0000 C CNN
-F 2 "" H 2100 2850 50  0001 C CNN
-F 3 "" H 2100 2850 50  0001 C CNN
-	1    2100 2850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2100 2850 2100 2700
-Connection ~ 2100 2250
-Text Notes 800  1250 0    50   ~ 0
-5V nom\n10V abs MAX\n
-$Comp
-L Device:CP_Small C?
-U 1 1 5BF0D8AF
-P 4000 1550
-AR Path="/5BCA1695/5BF0D8AF" Ref="C?"  Part="1" 
-AR Path="/5BF0D8AF" Ref="C5"  Part="1" 
-F 0 "C5" V 4225 1550 50  0000 C CNN
-F 1 "B45196-H2227-M409" V 4134 1550 50  0000 C CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D" H 4000 1550 50  0001 C CNN
-F 3 "http://datasheetz.com/data/Capacitors/Tantalum/495-2226-1-datasheetz.html" H 4000 1550 50  0001 C CNN
-	1    4000 1550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:CP_Small C?
-U 1 1 5BF0DBAB
-P 4000 1900
-AR Path="/5BCA1695/5BF0DBAB" Ref="C?"  Part="1" 
-AR Path="/5BF0DBAB" Ref="C6"  Part="1" 
-F 0 "C6" V 4225 1900 50  0000 C CNN
-F 1 "B45196-H2227-M409" V 4134 1900 50  0000 C CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D" H 4000 1900 50  0001 C CNN
-F 3 "http://datasheetz.com/data/Capacitors/Tantalum/495-2226-1-datasheetz.html" H 4000 1900 50  0001 C CNN
-	1    4000 1900
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:CP_Small C?
-U 1 1 5BF0DECE
-P 4000 2250
-AR Path="/5BCA1695/5BF0DECE" Ref="C?"  Part="1" 
-AR Path="/5BF0DECE" Ref="C7"  Part="1" 
-F 0 "C7" V 4225 2250 50  0000 C CNN
-F 1 "DNP" V 4134 2250 50  0000 C CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D" H 4000 2250 50  0001 C CNN
-F 3 "http://datasheetz.com/data/Capacitors/Tantalum/495-2226-1-datasheetz.html" H 4000 2250 50  0001 C CNN
-	1    4000 2250
-	0    -1   -1   0   
-$EndComp
-Text Notes 4600 2700 0    50   ~ 0
-499R
-Wire Wire Line
-	4550 2250 5450 2250
-Wire Wire Line
-	1550 2250 1550 1550
-Wire Wire Line
-	1550 1550 950  1550
-Connection ~ 1550 2250
-Wire Wire Line
-	1550 2250 1750 2250
-$Comp
-L Connector:Conn_01x02_Male J2
-U 1 1 5C0082A2
-P 750 1550
-F 0 "J2" H 858 1731 50  0000 C CNN
-F 1 "Conn_01x02_Male" H 858 1640 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 750 1550 50  0001 C CNN
-F 3 "~" H 750 1550 50  0001 C CNN
-	1    750  1550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	950  1650 1250 1650
-Wire Wire Line
-	1250 1650 1250 1800
-$Comp
-L power:GND #PWR?
-U 1 1 5C0090DB
-P 1250 1800
-AR Path="/5BCA1695/5C0090DB" Ref="#PWR?"  Part="1" 
-AR Path="/5C0090DB" Ref="#PWR0120"  Part="1" 
-F 0 "#PWR0120" H 1250 1550 50  0001 C CNN
-F 1 "GND" H 1255 1627 50  0000 C CNN
-F 2 "" H 1250 1800 50  0001 C CNN
-F 3 "" H 1250 1800 50  0001 C CNN
-	1    1250 1800
-	1    0    0    -1  
-$EndComp
 $Sheet
 S 8100 3200 1400 750 
 U 5C00C165
@@ -279,392 +59,379 @@ F2 "GB_IN" I L 8100 3550 50
 F3 "WB_OUT" I R 9500 3450 50 
 F4 "1MHZ_OUT" I R 9500 3750 50 
 $EndSheet
-Connection ~ 3000 2250
-Wire Wire Line
-	3000 2250 3450 2250
-Wire Wire Line
-	3000 2900 3100 2900
-Wire Wire Line
-	3100 2900 3100 3000
-Connection ~ 3000 2900
-Wire Wire Line
-	3000 2900 3000 2250
-Wire Wire Line
-	3100 2900 3200 2900
-Wire Wire Line
-	3200 2900 3200 3000
-Connection ~ 3100 2900
-Wire Wire Line
-	3200 2900 3300 2900
-Wire Wire Line
-	3300 2900 3300 3000
-Connection ~ 3200 2900
-Wire Wire Line
-	3300 3600 3300 3500
-Text Notes 1800 3500 0    50   ~ 0
-0R - cal only\n5R -> 2A -> 20W\n50R -> 200mA -> 2W\n499R -> 20mA -> 0.2W
-Wire Wire Line
-	3100 3500 3100 3750
-$Comp
-L Device:R_Small R8
-U 1 1 5BD94E9D
-P 3200 4000
-F 0 "R8" H 3259 4046 50  0000 L CNN
-F 1 "CRM2512-JW-470ELF" H 3259 3955 50  0000 L CNN
-F 2 "Resistor_SMD:R_2512_6332Metric" H 3200 4000 50  0001 C CNN
-F 3 "https://www.bourns.com/docs/Product-Datasheets/CRM.pdf" H 3200 4000 50  0001 C CNN
-	1    3200 4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3000 3500 3000 3600
-Wire Wire Line
-	3000 3600 1300 3600
-Wire Wire Line
-	1300 3600 1300 3900
-Wire Wire Line
-	3100 3750 1950 3750
-Wire Wire Line
-	1950 3750 1950 3900
-Wire Wire Line
-	3300 3600 4150 3600
-$Comp
-L Device:R_Small R7
-U 1 1 5BDA4BFF
-P 1950 4000
-F 0 "R7" H 2009 4046 50  0000 L CNN
-F 1 "RHC2512FT4R99" H 2009 3955 50  0000 L CNN
-F 2 "Resistor_SMD:R_2512_6332Metric" H 1950 4000 50  0001 C CNN
-F 3 "https://www.seielect.com/Catalog/SEI-rhc.pdf" H 1950 4000 50  0001 C CNN
-	1    1950 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5BDA82BC
-P 1300 4250
-AR Path="/5BCA1695/5BDA82BC" Ref="#PWR?"  Part="1" 
-AR Path="/5BDA82BC" Ref="#PWR0121"  Part="1" 
-F 0 "#PWR0121" H 1300 4000 50  0001 C CNN
-F 1 "GND" H 1305 4077 50  0000 C CNN
-F 2 "" H 1300 4250 50  0001 C CNN
-F 3 "" H 1300 4250 50  0001 C CNN
-	1    1300 4250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1300 4250 1300 4100
-$Comp
-L power:GND #PWR?
-U 1 1 5BDA9A79
-P 1950 4250
-AR Path="/5BCA1695/5BDA9A79" Ref="#PWR?"  Part="1" 
-AR Path="/5BDA9A79" Ref="#PWR0122"  Part="1" 
-F 0 "#PWR0122" H 1950 4000 50  0001 C CNN
-F 1 "GND" H 1955 4077 50  0000 C CNN
-F 2 "" H 1950 4250 50  0001 C CNN
-F 3 "" H 1950 4250 50  0001 C CNN
-	1    1950 4250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1950 4250 1950 4100
-$Comp
-L power:GND #PWR?
-U 1 1 5BDAAC42
-P 3200 4250
-AR Path="/5BCA1695/5BDAAC42" Ref="#PWR?"  Part="1" 
-AR Path="/5BDAAC42" Ref="#PWR0123"  Part="1" 
-F 0 "#PWR0123" H 3200 4000 50  0001 C CNN
-F 1 "GND" H 3205 4077 50  0000 C CNN
-F 2 "" H 3200 4250 50  0001 C CNN
-F 3 "" H 3200 4250 50  0001 C CNN
-	1    3200 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5BDABF72
-P 4150 4300
-AR Path="/5BCA1695/5BDABF72" Ref="#PWR?"  Part="1" 
-AR Path="/5BDABF72" Ref="#PWR0124"  Part="1" 
-F 0 "#PWR0124" H 4150 4050 50  0001 C CNN
-F 1 "GND" H 4155 4127 50  0000 C CNN
-F 2 "" H 4150 4300 50  0001 C CNN
-F 3 "" H 4150 4300 50  0001 C CNN
-	1    4150 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R9
-U 1 1 5BDB1249
-P 4150 4000
-F 0 "R9" H 4209 4046 50  0000 L CNN
-F 1 "CR1206-FX-4990ELF" H 4209 3955 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 4150 4000 50  0001 C CNN
-F 3 "https://www.bourns.com/docs/Product-Datasheets/CHPREZTR.pdf" H 4150 4000 50  0001 C CNN
-	1    4150 4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4150 3600 4150 3900
-Wire Wire Line
-	4150 4100 4150 4300
-Wire Wire Line
-	3200 4100 3200 4250
-$Comp
-L Device:Jumper_NC_Small JP1
-U 1 1 5BDC1820
-P 1300 4000
-F 0 "JP1" V 1254 4074 50  0000 L CNN
-F 1 "CAL_FUSE" V 1345 4074 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 1300 4000 50  0001 C CNN
-F 3 "~" H 1300 4000 50  0001 C CNN
-	1    1300 4000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3200 3500 3200 3900
-Wire Wire Line
-	3000 2900 3000 3000
-$Comp
-L Connector_Generic:Conn_02x04_Odd_Even J4
-U 1 1 5BDDF258
-P 3200 3200
-F 0 "J4" V 3204 3380 50  0000 L CNN
-F 1 "67996-408HLF" V 3295 3380 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 3200 3200 50  0001 C CNN
-F 3 "https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/67996.pdf" H 3200 3200 50  0001 C CNN
-	1    3200 3200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5450 2250 5450 3200
 Wire Wire Line
 	5450 3200 5750 3200
-Connection ~ 5450 2250
 Wire Wire Line
 	5450 2250 5900 2250
 $Comp
 L Connector:Conn_Coaxial J5
 U 1 1 5BE20310
-P 10650 3600
-F 0 "J5" H 10578 3838 50  0000 C CNN
-F 1 "Conn_Coaxial" H 10578 3747 50  0000 C CNN
-F 2 "Connector_Coaxial:BNC_TEConnectivity_1478204_Vertical" H 10650 3600 50  0001 C CNN
-F 3 " ~" H 10650 3600 50  0001 C CNN
-	1    10650 3600
+P 10650 2600
+F 0 "J5" H 10578 2838 50  0000 C CNN
+F 1 "Conn_Coaxial" H 10578 2747 50  0000 C CNN
+F 2 "Connector_Coaxial:BNC_TEConnectivity_1478204_Vertical" H 10650 2600 50  0001 C CNN
+F 3 " ~" H 10650 2600 50  0001 C CNN
+	1    10650 2600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5BE20316
-P 10650 4150
+P 10650 3150
 AR Path="/5BCA1695/5BE20316" Ref="#PWR?"  Part="1" 
 AR Path="/5BE20316" Ref="#PWR0135"  Part="1" 
-F 0 "#PWR0135" H 10650 3900 50  0001 C CNN
-F 1 "GND" H 10655 3977 50  0000 C CNN
-F 2 "" H 10650 4150 50  0001 C CNN
-F 3 "" H 10650 4150 50  0001 C CNN
-	1    10650 4150
+F 0 "#PWR0135" H 10650 2900 50  0001 C CNN
+F 1 "GND" H 10655 2977 50  0000 C CNN
+F 2 "" H 10650 3150 50  0001 C CNN
+F 3 "" H 10650 3150 50  0001 C CNN
+	1    10650 3150
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	10650 4150 10650 3800
+	10650 3150 10650 2800
 $Comp
 L Connector:Conn_Coaxial J6
 U 1 1 5BE24B1D
-P 10650 4800
-F 0 "J6" H 10578 5038 50  0000 C CNN
-F 1 "Conn_Coaxial" H 10578 4947 50  0000 C CNN
-F 2 "Connector_Coaxial:BNC_TEConnectivity_1478204_Vertical" H 10650 4800 50  0001 C CNN
-F 3 " ~" H 10650 4800 50  0001 C CNN
-	1    10650 4800
+P 10650 4450
+F 0 "J6" H 10578 4688 50  0000 C CNN
+F 1 "Conn_Coaxial" H 10578 4597 50  0000 C CNN
+F 2 "Connector_Coaxial:BNC_TEConnectivity_1478204_Vertical" H 10650 4450 50  0001 C CNN
+F 3 " ~" H 10650 4450 50  0001 C CNN
+	1    10650 4450
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5BE24B23
-P 10650 5350
+P 10650 5000
 AR Path="/5BCA1695/5BE24B23" Ref="#PWR?"  Part="1" 
 AR Path="/5BE24B23" Ref="#PWR0136"  Part="1" 
-F 0 "#PWR0136" H 10650 5100 50  0001 C CNN
-F 1 "GND" H 10655 5177 50  0000 C CNN
-F 2 "" H 10650 5350 50  0001 C CNN
-F 3 "" H 10650 5350 50  0001 C CNN
-	1    10650 5350
+F 0 "#PWR0136" H 10650 4750 50  0001 C CNN
+F 1 "GND" H 10655 4827 50  0000 C CNN
+F 2 "" H 10650 5000 50  0001 C CNN
+F 3 "" H 10650 5000 50  0001 C CNN
+	1    10650 5000
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	10650 5350 10650 5000
+	10650 5000 10650 4650
 $Comp
-L Device:D_Schottky_AAK D1
-U 1 1 5BE449D6
-P 2350 1850
-F 0 "D1" V 2329 1994 50  0000 L CNN
-F 1 "BAS116LT1G" V 2420 1994 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 2350 1850 50  0001 C CNN
-F 3 "http://www.onsemi.com/pub/Collateral/BAS116LT1-D.PDF" H 2350 1850 50  0001 C CNN
-	1    2350 1850
+L power:GND #PWR?
+U 1 1 5C0A28D4
+P 3500 2700
+AR Path="/5BCA1695/5C0A28D4" Ref="#PWR?"  Part="1" 
+AR Path="/5BE0B501/5C0A28D4" Ref="#PWR?"  Part="1" 
+AR Path="/5C0A28D4" Ref="#PWR0130"  Part="1" 
+F 0 "#PWR0130" H 3500 2450 50  0001 C CNN
+F 1 "GND" H 3505 2527 50  0000 C CNN
+F 2 "" H 3500 2700 50  0001 C CNN
+F 3 "" H 3500 2700 50  0001 C CNN
+	1    3500 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2550 3500 2700
+$Comp
+L Device:RF_Shield_Two_Pieces J?
+U 1 1 5C0A28DB
+P 3500 2150
+AR Path="/5BCA1695/5C0A28DB" Ref="J?"  Part="1" 
+AR Path="/5C0A28DB" Ref="J7"  Part="1" 
+F 0 "J7" H 4230 2214 50  0000 L CNN
+F 1 " 36503505S  36003500S " H 4230 2123 50  0001 L CNN
+F 2 "RF_Shielding:Wuerth_36503505_50x50mm" H 3500 2050 50  0001 C CNN
+F 3 "~" H 3500 2050 50  0001 C CNN
+	1    3500 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 3450 10000 3450
+Wire Wire Line
+	10000 3450 10000 2600
+Wire Wire Line
+	10000 2600 10450 2600
+Wire Wire Line
+	9500 3750 10000 3750
+Wire Wire Line
+	10000 3750 10000 4450
+Wire Wire Line
+	10000 4450 10450 4450
+Wire Wire Line
+	7550 2250 7850 2250
+Wire Wire Line
+	7850 2250 7850 3550
+Wire Wire Line
+	7850 3550 8100 3550
+$Sheet
+S 2900 3250 1400 1000
+U 5BD77D91
+F0 "InputStage" 79
+F1 "InStage.sch" 39
+F2 "IN_STG" I L 2900 3700 50 
+F3 "OUT_STG" I R 4300 3700 50 
+$EndSheet
+$Comp
+L Connector:Conn_Coaxial J2
+U 1 1 5BD8CE6F
+P 1200 3700
+F 0 "J2" H 1128 3938 50  0000 C CNN
+F 1 "Conn_Coaxial" H 1128 3847 50  0000 C CNN
+F 2 "Connector_Coaxial:BNC_TEConnectivity_1478204_Vertical" H 1200 3700 50  0001 C CNN
+F 3 " ~" H 1200 3700 50  0001 C CNN
+	1    1200 3700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BD8CE75
+P 1200 4250
+AR Path="/5BCA1695/5BD8CE75" Ref="#PWR?"  Part="1" 
+AR Path="/5BD8CE75" Ref="#PWR0105"  Part="1" 
+F 0 "#PWR0105" H 1200 4000 50  0001 C CNN
+F 1 "GND" H 1205 4077 50  0000 C CNN
+F 2 "" H 1200 4250 50  0001 C CNN
+F 3 "" H 1200 4250 50  0001 C CNN
+	1    1200 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 4250 1200 3900
+Text Notes 1150 2450 0    50   ~ 0
+5V nom\n10V abs MAX\n
+Wire Wire Line
+	1950 3700 1950 2850
+Wire Wire Line
+	1950 2850 1300 2850
+Connection ~ 1950 3700
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 5BD8CE81
+P 1100 2850
+F 0 "J1" H 1208 3031 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 1208 2940 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1100 2850 50  0001 C CNN
+F 3 "~" H 1100 2850 50  0001 C CNN
+	1    1100 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 2950 1600 2950
+Wire Wire Line
+	1600 2950 1600 3100
+$Comp
+L power:GND #PWR?
+U 1 1 5BD8CE89
+P 1600 3100
+AR Path="/5BCA1695/5BD8CE89" Ref="#PWR?"  Part="1" 
+AR Path="/5BD8CE89" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 1600 2850 50  0001 C CNN
+F 1 "GND" H 1605 2927 50  0000 C CNN
+F 2 "" H 1600 3100 50  0001 C CNN
+F 3 "" H 1600 3100 50  0001 C CNN
+	1    1600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J3
+U 1 1 5BD8CE8F
+P 1200 4800
+F 0 "J3" H 1128 5038 50  0000 C CNN
+F 1 "Conn_Coaxial" H 1128 4947 50  0000 C CNN
+F 2 "Connector_Coaxial:BNC_TEConnectivity_1478204_Vertical" H 1200 4800 50  0001 C CNN
+F 3 " ~" H 1200 4800 50  0001 C CNN
+	1    1200 4800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BD8CE95
+P 1200 5350
+AR Path="/5BCA1695/5BD8CE95" Ref="#PWR?"  Part="1" 
+AR Path="/5BD8CE95" Ref="#PWR0111"  Part="1" 
+F 0 "#PWR0111" H 1200 5100 50  0001 C CNN
+F 1 "GND" H 1205 5177 50  0000 C CNN
+F 2 "" H 1200 5350 50  0001 C CNN
+F 3 "" H 1200 5350 50  0001 C CNN
+	1    1200 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 5350 1200 5000
+Wire Wire Line
+	1400 4800 1950 4800
+Wire Wire Line
+	1400 3700 1950 3700
+Wire Wire Line
+	1950 4800 1950 3700
+Wire Wire Line
+	1950 3700 2900 3700
+Wire Wire Line
+	5450 2250 5450 3200
+Wire Wire Line
+	5450 3200 5450 3700
+Wire Wire Line
+	4300 3700 5450 3700
+Connection ~ 5450 3200
+$Sheet
+S 3400 6550 1550 650 
+U 5BD9C0CB
+F0 "PowerSupply" 79
+F1 "PSU.sch" 39
+$EndSheet
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5BDC4259
+P 2950 6550
+F 0 "H4" H 3050 6599 50  0000 L CNN
+F 1 "M3.5" H 3050 6508 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad_Via" H 2950 6550 50  0001 C CNN
+F 3 "~" H 2950 6550 50  0001 C CNN
+	1    2950 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BDC583C
+P 2950 7000
+AR Path="/5BCA1695/5BDC583C" Ref="#PWR?"  Part="1" 
+AR Path="/5BDC583C" Ref="#PWR0153"  Part="1" 
+F 0 "#PWR0153" H 2950 6750 50  0001 C CNN
+F 1 "GND" H 2955 6827 50  0000 C CNN
+F 2 "" H 2950 7000 50  0001 C CNN
+F 3 "" H 2950 7000 50  0001 C CNN
+	1    2950 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP5
+U 1 1 5BDC747D
+P 2950 6800
+F 0 "JP5" V 2950 6874 50  0000 L CNN
+F 1 "GND_SHIELD" V 2995 6874 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2950 6800 50  0001 C CNN
+F 3 "~" H 2950 6800 50  0001 C CNN
+	1    2950 6800
 	0    1    1    0   
 $EndComp
-NoConn ~ 2350 2050
-$Comp
-L Device:C_Small C?
-U 1 1 5BE4E27A
-P 3250 5950
-AR Path="/5BCA1695/5BE4E27A" Ref="C?"  Part="1" 
-AR Path="/5BE0B501/5BE4E27A" Ref="C?"  Part="1" 
-AR Path="/5BE4E27A" Ref="C22"  Part="1" 
-F 0 "C22" V 3021 5950 50  0000 R CNN
-F 1 "0603B104M500CT " V 3112 5950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 3250 5950 50  0001 C CNN
-F 3 "http://www.passivecomponent.com/indexsea/ASC_General_Purpose.pdf" H 3250 5950 50  0001 C CNN
-	1    3250 5950
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
-	3350 5950 3450 5950
-$Comp
-L power:GND #PWR?
-U 1 1 5BE4E281
-P 3450 5950
-AR Path="/5BCA1695/5BE4E281" Ref="#PWR?"  Part="1" 
-AR Path="/5BE0B501/5BE4E281" Ref="#PWR?"  Part="1" 
-AR Path="/5BE4E281" Ref="#PWR0137"  Part="1" 
-F 0 "#PWR0137" H 3450 5700 50  0001 C CNN
-F 1 "GND" V 3455 5822 50  0000 R CNN
-F 2 "" H 3450 5950 50  0001 C CNN
-F 3 "" H 3450 5950 50  0001 C CNN
-	1    3450 5950
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5BE4E287
-P 3000 5950
-AR Path="/5BCA1695/5BE4E287" Ref="#PWR?"  Part="1" 
-AR Path="/5BE0B501/5BE4E287" Ref="#PWR?"  Part="1" 
-AR Path="/5BE4E287" Ref="#PWR0138"  Part="1" 
-F 0 "#PWR0138" H 3000 5800 50  0001 C CNN
-F 1 "+5V" H 3015 6123 50  0000 C CNN
-F 2 "" H 3000 5950 50  0001 C CNN
-F 3 "" H 3000 5950 50  0001 C CNN
-	1    3000 5950
-	0    -1   -1   0   
-$EndComp
+	2950 6700 2950 6650
 Wire Wire Line
-	3000 5950 3150 5950
+	2950 6900 2950 7000
 $Comp
-L Device:C_Small C?
-U 1 1 5BE4F7D6
-P 7650 6750
-AR Path="/5BCA1695/5BE4F7D6" Ref="C?"  Part="1" 
-AR Path="/5BE0B501/5BE4F7D6" Ref="C?"  Part="1" 
-AR Path="/5BE4F7D6" Ref="C23"  Part="1" 
-F 0 "C23" V 7421 6750 50  0000 R CNN
-F 1 "0603B104M500CT " V 7512 6750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7650 6750 50  0001 C CNN
-F 3 "http://www.passivecomponent.com/indexsea/ASC_General_Purpose.pdf" H 7650 6750 50  0001 C CNN
-	1    7650 6750
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7750 6750 7850 6750
-$Comp
-L power:GND #PWR?
-U 1 1 5BE4F7DD
-P 7850 6750
-AR Path="/5BCA1695/5BE4F7DD" Ref="#PWR?"  Part="1" 
-AR Path="/5BE0B501/5BE4F7DD" Ref="#PWR?"  Part="1" 
-AR Path="/5BE4F7DD" Ref="#PWR0139"  Part="1" 
-F 0 "#PWR0139" H 7850 6500 50  0001 C CNN
-F 1 "GND" V 7855 6622 50  0000 R CNN
-F 2 "" H 7850 6750 50  0001 C CNN
-F 3 "" H 7850 6750 50  0001 C CNN
-	1    7850 6750
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5BE4F7E3
-P 7400 6750
-AR Path="/5BCA1695/5BE4F7E3" Ref="#PWR?"  Part="1" 
-AR Path="/5BE0B501/5BE4F7E3" Ref="#PWR?"  Part="1" 
-AR Path="/5BE4F7E3" Ref="#PWR0140"  Part="1" 
-F 0 "#PWR0140" H 7400 6600 50  0001 C CNN
-F 1 "+5V" H 7415 6923 50  0000 C CNN
-F 2 "" H 7400 6750 50  0001 C CNN
-F 3 "" H 7400 6750 50  0001 C CNN
-	1    7400 6750
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7400 6750 7550 6750
-$Comp
-L power:+5V #PWR?
-U 1 1 5BE52E88
-P 2350 1600
-AR Path="/5BCA1695/5BE52E88" Ref="#PWR?"  Part="1" 
-AR Path="/5BE0B501/5BE52E88" Ref="#PWR?"  Part="1" 
-AR Path="/5BE52E88" Ref="#PWR0141"  Part="1" 
-F 0 "#PWR0141" H 2350 1450 50  0001 C CNN
-F 1 "+5V" H 2365 1773 50  0000 C CNN
-F 2 "" H 2350 1600 50  0001 C CNN
-F 3 "" H 2350 1600 50  0001 C CNN
-	1    2350 1600
+L Mechanical:MountingHole_Pad H3
+U 1 1 5BDCDA2D
+P 2550 6550
+F 0 "H3" H 2650 6599 50  0000 L CNN
+F 1 "M3.5" H 2650 6508 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad_Via" H 2550 6550 50  0001 C CNN
+F 3 "~" H 2550 6550 50  0001 C CNN
+	1    2550 6550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2350 1600 2350 1700
-Wire Wire Line
-	2450 2050 2450 2250
-Connection ~ 2450 2250
-Wire Wire Line
-	2450 2250 3000 2250
 $Comp
-L Device:D_Schottky_AAK D2
-U 1 1 5BE64BC4
-P 2350 2650
-F 0 "D2" V 2329 2794 50  0000 L CNN
-F 1 "BAS116LT1G" V 2420 2794 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 2350 2650 50  0001 C CNN
-F 3 "http://www.onsemi.com/pub/Collateral/BAS116LT1-D.PDF" H 2350 2650 50  0001 C CNN
-	1    2350 2650
-	0    1    -1   0   
-$EndComp
-NoConn ~ 2350 2450
-Wire Wire Line
-	2350 2800 2350 2850
-$Comp
-L power:-5V #PWR?
-U 1 1 5BE8434D
-P 2350 2850
-AR Path="/5BCA1695/5BE8434D" Ref="#PWR?"  Part="1" 
-AR Path="/5BE0B501/5BE8434D" Ref="#PWR?"  Part="1" 
-AR Path="/5BE8434D" Ref="#PWR0142"  Part="1" 
-F 0 "#PWR0142" H 2350 2950 50  0001 C CNN
-F 1 "-5V" H 2365 3023 50  0000 C CNN
-F 2 "" H 2350 2850 50  0001 C CNN
-F 3 "" H 2350 2850 50  0001 C CNN
-	1    2350 2850
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2100 2250 2450 2250
-Wire Wire Line
-	2450 2250 2450 2450
-$Comp
-L Device:R_Small R?
-U 1 1 5BE83EC6
-P 4550 2900
-AR Path="/5BCA1695/5BE83EC6" Ref="R?"  Part="1" 
-AR Path="/5BE83EC6" Ref="R3"  Part="1" 
-F 0 "R3" H 4609 2946 50  0000 L CNN
-F 1 " RMCF0603FT499R" H 4609 2855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4550 2900 50  0001 C CNN
-F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 4550 2900 50  0001 C CNN
-	1    4550 2900
+L power:GND #PWR?
+U 1 1 5BDCDA33
+P 2550 7000
+AR Path="/5BCA1695/5BDCDA33" Ref="#PWR?"  Part="1" 
+AR Path="/5BDCDA33" Ref="#PWR0154"  Part="1" 
+F 0 "#PWR0154" H 2550 6750 50  0001 C CNN
+F 1 "GND" H 2555 6827 50  0000 C CNN
+F 2 "" H 2550 7000 50  0001 C CNN
+F 3 "" H 2550 7000 50  0001 C CNN
+	1    2550 7000
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:Jumper_NC_Small JP4
+U 1 1 5BDCDA39
+P 2550 6800
+F 0 "JP4" V 2550 6874 50  0000 L CNN
+F 1 "GND_SHIELD" V 2595 6874 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2550 6800 50  0001 C CNN
+F 3 "~" H 2550 6800 50  0001 C CNN
+	1    2550 6800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2550 6700 2550 6650
+Wire Wire Line
+	2550 6900 2550 7000
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5BDCE82C
+P 2150 6550
+F 0 "H2" H 2250 6599 50  0000 L CNN
+F 1 "M3.5" H 2250 6508 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad_Via" H 2150 6550 50  0001 C CNN
+F 3 "~" H 2150 6550 50  0001 C CNN
+	1    2150 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BDCE832
+P 2150 7000
+AR Path="/5BCA1695/5BDCE832" Ref="#PWR?"  Part="1" 
+AR Path="/5BDCE832" Ref="#PWR0155"  Part="1" 
+F 0 "#PWR0155" H 2150 6750 50  0001 C CNN
+F 1 "GND" H 2155 6827 50  0000 C CNN
+F 2 "" H 2150 7000 50  0001 C CNN
+F 3 "" H 2150 7000 50  0001 C CNN
+	1    2150 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP3
+U 1 1 5BDCE838
+P 2150 6800
+F 0 "JP3" V 2150 6874 50  0000 L CNN
+F 1 "GND_SHIELD" V 2195 6874 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2150 6800 50  0001 C CNN
+F 3 "~" H 2150 6800 50  0001 C CNN
+	1    2150 6800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 6700 2150 6650
+Wire Wire Line
+	2150 6900 2150 7000
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5BDCF623
+P 1700 6550
+F 0 "H1" H 1800 6599 50  0000 L CNN
+F 1 "M3.5" H 1800 6508 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad_Via" H 1700 6550 50  0001 C CNN
+F 3 "~" H 1700 6550 50  0001 C CNN
+	1    1700 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BDCF629
+P 1700 7000
+AR Path="/5BCA1695/5BDCF629" Ref="#PWR?"  Part="1" 
+AR Path="/5BDCF629" Ref="#PWR0156"  Part="1" 
+F 0 "#PWR0156" H 1700 6750 50  0001 C CNN
+F 1 "GND" H 1705 6827 50  0000 C CNN
+F 2 "" H 1700 7000 50  0001 C CNN
+F 3 "" H 1700 7000 50  0001 C CNN
+	1    1700 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP2
+U 1 1 5BDCF62F
+P 1700 6800
+F 0 "JP2" V 1700 6874 50  0000 L CNN
+F 1 "GND_SHIELD" V 1745 6874 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 1700 6800 50  0001 C CNN
+F 3 "~" H 1700 6800 50  0001 C CNN
+	1    1700 6800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1700 6700 1700 6650
+Wire Wire Line
+	1700 6900 1700 7000
 $EndSCHEMATC
