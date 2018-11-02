@@ -4,11 +4,11 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
-Title ""
+Sheet 4 8
+Title "Power Supply Noise Tester"
 Date ""
-Rev ""
-Comp ""
+Rev "1.0"
+Comp "Paweł Woźny"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -381,38 +381,35 @@ Wire Wire Line
 $Comp
 L Device:D_Schottky_AAK D?
 U 1 1 5BD8662D
-P 4150 3550
+P 4150 3450
 AR Path="/5BD8662D" Ref="D?"  Part="1" 
 AR Path="/5BD77D91/5BD8662D" Ref="D2"  Part="1" 
-F 0 "D2" V 4129 3694 50  0000 L CNN
-F 1 "BAS116LT1G" V 4220 3694 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4150 3550 50  0001 C CNN
-F 3 "http://www.onsemi.com/pub/Collateral/BAS116LT1-D.PDF" H 4150 3550 50  0001 C CNN
-	1    4150 3550
-	0    1    -1   0   
+F 0 "D2" V 4129 3594 50  0000 L CNN
+F 1 "BAS116LT1G" V 4220 3594 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4150 3450 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/BAS116LT1-D.PDF" H 4150 3450 50  0001 C CNN
+	1    4150 3450
+	0    1    1    0   
 $EndComp
-NoConn ~ 4150 3350
 Wire Wire Line
-	4150 3700 4150 3800
+	4250 3650 4250 3800
 $Comp
 L power:-5V #PWR?
 U 1 1 5BD86635
-P 4150 3850
+P 4250 3850
 AR Path="/5BCA1695/5BD86635" Ref="#PWR?"  Part="1" 
 AR Path="/5BE0B501/5BD86635" Ref="#PWR?"  Part="1" 
 AR Path="/5BD86635" Ref="#PWR?"  Part="1" 
 AR Path="/5BD77D91/5BD86635" Ref="#PWR0138"  Part="1" 
-F 0 "#PWR0138" H 4150 3950 50  0001 C CNN
-F 1 "-5V" H 4165 4023 50  0000 C CNN
-F 2 "" H 4150 3850 50  0001 C CNN
-F 3 "" H 4150 3850 50  0001 C CNN
-	1    4150 3850
+F 0 "#PWR0138" H 4250 3950 50  0001 C CNN
+F 1 "-5V" H 4265 4023 50  0000 C CNN
+F 2 "" H 4250 3850 50  0001 C CNN
+F 3 "" H 4250 3850 50  0001 C CNN
+	1    4250 3850
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3900 3150 4250 3150
-Wire Wire Line
-	4250 3150 4250 3350
+	3900 3150 4150 3150
 $Comp
 L Device:R_Small R?
 U 1 1 5BD8663D
@@ -470,43 +467,43 @@ Wire Wire Line
 $Comp
 L Device:C_Small C?
 U 1 1 5BDB24A8
-P 4600 3800
+P 4700 3800
 AR Path="/5BCA1695/5BDB24A8" Ref="C?"  Part="1" 
 AR Path="/5BE0B501/5BDB24A8" Ref="C?"  Part="1" 
 AR Path="/5BDB24A8" Ref="C?"  Part="1" 
 AR Path="/5BD77D91/5BDB24A8" Ref="C5"  Part="1" 
-F 0 "C5" V 4371 3800 50  0000 R CNN
-F 1 "0603B104M500CT " V 4462 3800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4600 3800 50  0001 C CNN
-F 3 "http://www.passivecomponent.com/indexsea/ASC_General_Purpose.pdf" H 4600 3800 50  0001 C CNN
-	1    4600 3800
+F 0 "C5" V 4471 3800 50  0000 R CNN
+F 1 "0603B104M500CT " V 4562 3800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4700 3800 50  0001 C CNN
+F 3 "http://www.passivecomponent.com/indexsea/ASC_General_Purpose.pdf" H 4700 3800 50  0001 C CNN
+	1    4700 3800
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4700 3800 4800 3800
+	4800 3800 4900 3800
 $Comp
 L power:GND #PWR?
 U 1 1 5BDB24AF
-P 4800 3800
+P 4900 3800
 AR Path="/5BCA1695/5BDB24AF" Ref="#PWR?"  Part="1" 
 AR Path="/5BE0B501/5BDB24AF" Ref="#PWR?"  Part="1" 
 AR Path="/5BDB24AF" Ref="#PWR?"  Part="1" 
 AR Path="/5BD77D91/5BDB24AF" Ref="#PWR0140"  Part="1" 
-F 0 "#PWR0140" H 4800 3550 50  0001 C CNN
-F 1 "GND" V 4805 3672 50  0000 R CNN
-F 2 "" H 4800 3800 50  0001 C CNN
-F 3 "" H 4800 3800 50  0001 C CNN
-	1    4800 3800
+F 0 "#PWR0140" H 4900 3550 50  0001 C CNN
+F 1 "GND" V 4905 3672 50  0000 R CNN
+F 2 "" H 4900 3800 50  0001 C CNN
+F 3 "" H 4900 3800 50  0001 C CNN
+	1    4900 3800
 	0    -1   -1   0   
 $EndComp
 Connection ~ 4150 2400
 Wire Wire Line
 	4150 2400 4150 2600
 Wire Wire Line
-	4150 3800 4500 3800
-Connection ~ 4150 3800
+	4250 3800 4600 3800
+Connection ~ 4250 3800
 Wire Wire Line
-	4150 3800 4150 3850
+	4250 3800 4250 3850
 Wire Wire Line
 	5450 4400 5450 4650
 Wire Wire Line
@@ -516,4 +513,10 @@ Wire Wire Line
 Connection ~ 5350 3150
 Wire Wire Line
 	5550 4400 5550 4950
+Connection ~ 4150 3150
+Wire Wire Line
+	4150 3150 4250 3150
+Wire Wire Line
+	4150 3150 4150 3300
+NoConn ~ 4150 3650
 $EndSCHEMATC

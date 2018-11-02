@@ -4,42 +4,20 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
-Title ""
+Sheet 5 8
+Title "Power Supply Noise Tester"
 Date ""
-Rev ""
-Comp ""
+Rev "1.0"
+Comp "Paweł Woźny"
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Device:Battery BT1
-U 1 1 5BDA050B
-P 1600 4950
-F 0 "BT1" H 1708 4996 50  0000 L CNN
-F 1 "https://allegro.pl/koszyk-na-baterie-3x-d-r20-i7578288636.html" H 1708 4905 50  0000 L CNN
-F 2 "" V 1600 5010 50  0001 C CNN
-F 3 "~" V 1600 5010 50  0001 C CNN
-	1    1600 4950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x03_Male J8
-U 1 1 5BDA117E
-P 4550 3550
-F 0 "J8" H 4658 3831 50  0000 C CNN
-F 1 "PWR IN" H 4658 3740 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4550 3550 50  0001 C CNN
-F 3 "~" H 4550 3550 50  0001 C CNN
-	1    4550 3550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	5250 3450 4750 3450
+	5250 3400 4750 3400
 Wire Wire Line
-	5250 3650 4750 3650
+	5250 3700 4750 3700
 $Comp
 L power:GND #PWR0150
 U 1 1 5BDA3DDB
@@ -85,18 +63,17 @@ $EndComp
 $Comp
 L Device:D_Schottky_AAK D?
 U 1 1 5BDA6B67
-P 6550 3950
+P 6550 3900
 AR Path="/5BDA6B67" Ref="D?"  Part="1" 
 AR Path="/5BD77D91/5BDA6B67" Ref="D?"  Part="1" 
 AR Path="/5BD9C0CB/5BDA6B67" Ref="D4"  Part="1" 
-F 0 "D4" V 6529 4094 50  0000 L CNN
-F 1 "BAS116LT1G" V 6620 4094 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6550 3950 50  0001 C CNN
-F 3 "http://www.onsemi.com/pub/Collateral/BAS116LT1-D.PDF" H 6550 3950 50  0001 C CNN
-	1    6550 3950
-	0    1    -1   0   
+F 0 "D4" V 6529 4044 50  0000 L CNN
+F 1 "BAS116LT1G" V 6620 4044 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6550 3900 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/BAS116LT1-D.PDF" H 6550 3900 50  0001 C CNN
+	1    6550 3900
+	0    1    1    0   
 $EndComp
-NoConn ~ 6550 3750
 $Comp
 L power:-5V #PWR?
 U 1 1 5BDA6B6F
@@ -116,20 +93,9 @@ $EndComp
 Wire Wire Line
 	9200 2550 9200 2700
 Wire Wire Line
-	6550 4100 6550 4300
+	6650 4100 6650 4300
 Wire Wire Line
-	4750 3550 5450 3550
-$Comp
-L Device:Battery BT2
-U 1 1 5BDAE5FB
-P 1600 5500
-F 0 "BT2" H 1708 5546 50  0000 L CNN
-F 1 "https://allegro.pl/koszyk-na-baterie-3x-d-r20-i7578288636.html" H 1708 5455 50  0000 L CNN
-F 2 "" V 1600 5560 50  0001 C CNN
-F 3 "~" V 1600 5560 50  0001 C CNN
-	1    1600 5500
-	1    0    0    -1  
-$EndComp
+	4900 3550 5450 3550
 $Comp
 L Device:C_Small C?
 U 1 1 5BDBC650
@@ -155,7 +121,7 @@ Connection ~ 6250 3550
 Wire Wire Line
 	5500 2800 5250 2800
 Wire Wire Line
-	5250 2800 5250 3450
+	5250 2800 5250 3400
 $Comp
 L Device:C_Small C?
 U 1 1 5BDC9173
@@ -180,7 +146,7 @@ Wire Wire Line
 Wire Wire Line
 	5500 4300 5250 4300
 Wire Wire Line
-	5250 4300 5250 3650
+	5250 4300 5250 3700
 Connection ~ 6250 4300
 Connection ~ 6250 2800
 Wire Wire Line
@@ -324,18 +290,16 @@ Wire Wire Line
 Connection ~ 6550 2800
 Wire Wire Line
 	6550 2800 6250 2800
-Connection ~ 6550 4300
+Connection ~ 6650 4300
 Wire Wire Line
-	6550 4300 6250 4300
+	6650 4300 6250 4300
 Wire Wire Line
 	6650 3350 6650 3550
 Wire Wire Line
 	6650 3550 9150 3550
 Connection ~ 6650 3550
 Wire Wire Line
-	6650 3550 6650 3750
-Wire Wire Line
-	6650 3550 6250 3550
+	6650 3550 6550 3550
 Wire Wire Line
 	7500 2700 7850 2700
 Wire Wire Line
@@ -359,7 +323,7 @@ Wire Wire Line
 	7000 3950 7000 4300
 Connection ~ 7000 4300
 Wire Wire Line
-	7000 4300 6550 4300
+	7000 4300 6650 4300
 $Comp
 L Device:LED_Small D5
 U 1 1 5BFE7BEF
@@ -420,4 +384,30 @@ F 3 "" H 9900 3150 50  0001 C CNN
 	1    9900 3150
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6550 3750 6550 3550
+Connection ~ 6550 3550
+Wire Wire Line
+	6550 3550 6250 3550
+NoConn ~ 6550 4100
+$Comp
+L Connector:Conn_01x04_Male J8
+U 1 1 5BE3F2F7
+P 4550 3500
+F 0 "J8" H 4658 3781 50  0000 C CNN
+F 1 "PWR IN" H 4658 3690 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4550 3500 50  0001 C CNN
+F 3 "~" H 4550 3500 50  0001 C CNN
+	1    4550 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3550 4900 3500
+Wire Wire Line
+	4900 3500 4750 3500
+Wire Wire Line
+	4900 3550 4900 3600
+Wire Wire Line
+	4900 3600 4750 3600
+Connection ~ 4900 3550
 $EndSCHEMATC

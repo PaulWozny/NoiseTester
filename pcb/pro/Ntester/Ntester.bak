@@ -4,11 +4,11 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
-Title ""
+Sheet 1 8
+Title "Power Supply Noise Tester"
 Date ""
-Rev ""
-Comp ""
+Rev "1.0"
+Comp "Paweł Woźny"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -22,34 +22,6 @@ F1 "InAmp.sch" 39
 F2 "IN_AMP" I L 5900 2250 50 
 F3 "OUT_AMP" I R 7550 2250 50 
 $EndSheet
-Text Notes 8000 1150 0    157  ~ 0
-TODO:\ncheck polarization of caps\nchange value of caps 100uF->220uF\nchange resitors 06->04
-Wire Notes Line
-	5950 3500 7500 3500
-Wire Notes Line
-	7500 3500 7500 2750
-Wire Notes Line
-	7500 2750 5950 2750
-Wire Notes Line
-	5950 2700 5950 3500
-Wire Notes Line
-	5850 4550 7400 4550
-Wire Notes Line
-	7400 4550 7400 3800
-Wire Notes Line
-	7400 3800 5850 3800
-Wire Notes Line
-	5850 3750 5850 4550
-Wire Notes Line
-	5850 5600 7400 5600
-Wire Notes Line
-	7400 5600 7400 4850
-Wire Notes Line
-	7400 4850 5850 4850
-Wire Notes Line
-	5850 4800 5850 5600
-Wire Notes Line
-	5350 5200 5850 5200
 $Sheet
 S 8100 3200 1400 750 
 U 5C00C165
@@ -59,8 +31,6 @@ F2 "GB_IN" I L 8100 3550 50
 F3 "WB_OUT" I R 9500 3450 50 
 F4 "1MHZ_OUT" I R 9500 3750 50 
 $EndSheet
-Wire Wire Line
-	5450 3200 5750 3200
 Wire Wire Line
 	5450 2250 5900 2250
 $Comp
@@ -158,8 +128,6 @@ Wire Wire Line
 	10000 4450 10450 4450
 Wire Wire Line
 	7550 2250 7850 2250
-Wire Wire Line
-	7850 2250 7850 3550
 Wire Wire Line
 	7850 3550 8100 3550
 $Sheet
@@ -265,13 +233,6 @@ Wire Wire Line
 	1950 4800 1950 3700
 Wire Wire Line
 	1950 3700 2900 3700
-Wire Wire Line
-	5450 2250 5450 3200
-Wire Wire Line
-	5450 3200 5450 3700
-Wire Wire Line
-	4300 3700 5450 3700
-Connection ~ 5450 3200
 $Sheet
 S 3400 6550 1550 650 
 U 5BD9C0CB
@@ -434,4 +395,127 @@ Wire Wire Line
 	1700 6700 1700 6650
 Wire Wire Line
 	1700 6900 1700 7000
+Text Notes 12200 1950 0    118  ~ 0
+Do zamówienia:\nLT1818\nLT6231
+$Sheet
+S 5850 3000 1600 750 
+U 5BE7BD5E
+F0 "LNA1" 50
+F1 "LNA1.sch" 50
+F2 "IN_AMP" I L 5850 3300 50 
+F3 "OUT_AMP" I R 7450 3350 50 
+$EndSheet
+Wire Wire Line
+	7850 2250 7850 3350
+Wire Wire Line
+	5450 2250 5450 3300
+Wire Wire Line
+	7450 3350 7850 3350
+Connection ~ 7850 3350
+Wire Wire Line
+	7850 3350 7850 3550
+Wire Wire Line
+	5850 3300 5450 3300
+Connection ~ 5450 3300
+Wire Wire Line
+	5450 3300 5450 3700
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5BDDBE16
+P 1250 6936
+AR Path="/5BCA1695/5BDDBE16" Ref="TP?"  Part="1" 
+AR Path="/5BE53A35/5BDDBE16" Ref="TP?"  Part="1" 
+AR Path="/5BDDBE16" Ref="TP4"  Part="1" 
+F 0 "TP4" H 1308 7008 50  0000 L CNN
+F 1 "TestPoint" H 1308 6963 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 1450 6936 50  0001 C CNN
+F 3 "~" H 1450 6936 50  0001 C CNN
+	1    1250 6936
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BDDBE1C
+P 1250 7036
+AR Path="/5BCA1695/5BDDBE1C" Ref="#PWR?"  Part="1" 
+AR Path="/5BE0B501/5BDDBE1C" Ref="#PWR?"  Part="1" 
+AR Path="/5BE53A35/5BDDBE1C" Ref="#PWR?"  Part="1" 
+AR Path="/5BDDBE1C" Ref="#PWR0147"  Part="1" 
+F 0 "#PWR0147" H 1250 6786 50  0001 C CNN
+F 1 "GND" H 1255 6863 50  0000 C CNN
+F 2 "" H 1250 7036 50  0001 C CNN
+F 3 "" H 1250 7036 50  0001 C CNN
+	1    1250 7036
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 7036 1250 6936
+Wire Wire Line
+	4300 3700 4850 3700
+Wire Wire Line
+	4850 3700 4850 3450
+Connection ~ 4850 3700
+Wire Wire Line
+	4850 3700 5450 3700
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5BDD2090
+P 4850 3450
+AR Path="/5BCA1695/5BDD2090" Ref="TP?"  Part="1" 
+AR Path="/5BE53A35/5BDD2090" Ref="TP?"  Part="1" 
+AR Path="/5BDD2090" Ref="TP1"  Part="1" 
+F 0 "TP1" H 4908 3522 50  0000 L CNN
+F 1 "TestPoint" H 4908 3477 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5050 3450 50  0001 C CNN
+F 3 "~" H 5050 3450 50  0001 C CNN
+	1    4850 3450
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 5850 4100 1600 700 
+U 5BDD458C
+F0 "LNA2" 50
+F1 "LNA2.sch" 50
+F2 "IN_AMP" I L 5850 4450 50 
+F3 "OUT_AMP" I R 7450 4450 50 
+$EndSheet
+Wire Wire Line
+	5850 4450 5450 4450
+Wire Wire Line
+	5450 4450 5450 3700
+Connection ~ 5450 3700
+Wire Wire Line
+	7450 4450 7850 4450
+Wire Wire Line
+	7850 4450 7850 3550
+Connection ~ 7850 3550
+$Sheet
+S 5850 5050 1600 650 
+U 5BE154B7
+F0 "LNA3" 50
+F1 "LNA3.sch" 50
+F2 "IN_AMP" I L 5850 5350 50 
+F3 "OUT_AMP" I R 7450 5400 50 
+$EndSheet
+Wire Wire Line
+	5850 5350 5450 5350
+Wire Wire Line
+	5450 5350 5450 4450
+Connection ~ 5450 4450
+Wire Wire Line
+	7450 5400 7850 5400
+Wire Wire Line
+	7850 5400 7850 4450
+Connection ~ 7850 4450
+$Comp
+L Graphic:Logo_Open_Hardware_Small #LOGO1
+U 1 1 5BE54ADD
+P 10750 6850
+F 0 "#LOGO1" H 10750 7125 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 10750 6625 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo2_7.3x6mm_SilkScreen" H 10750 6850 50  0001 C CNN
+F 3 "~" H 10750 6850 50  0001 C CNN
+	1    10750 6850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
