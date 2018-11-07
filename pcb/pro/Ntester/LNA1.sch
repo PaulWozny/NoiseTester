@@ -757,12 +757,9 @@ Long tail pair bypassing\n
 Wire Wire Line
 	4600 4650 4600 5050
 Wire Wire Line
-	4600 5050 4600 6200
-Wire Wire Line
 	4600 6200 2500 6200
 Wire Wire Line
 	2500 6200 2500 4100
-Connection ~ 4600 5050
 Connection ~ 2500 4100
 Wire Wire Line
 	2500 4100 1850 4100

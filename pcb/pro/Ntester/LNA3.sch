@@ -829,12 +829,9 @@ Long tail pair bypassing\n
 Wire Wire Line
 	4599 4022 4599 4422
 Wire Wire Line
-	4599 4422 4599 5572
-Wire Wire Line
 	4599 5572 2499 5572
 Wire Wire Line
 	2499 5572 2499 3472
-Connection ~ 4599 4422
 Connection ~ 2499 3472
 Wire Wire Line
 	2499 3472 1849 3472

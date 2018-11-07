@@ -793,12 +793,9 @@ Long tail pair bypassing\n
 Wire Wire Line
 	4699 4222 4699 4622
 Wire Wire Line
-	4699 4622 4699 5772
-Wire Wire Line
 	4699 5772 2599 5772
 Wire Wire Line
 	2599 5772 2599 3672
-Connection ~ 4699 4622
 Connection ~ 2599 3672
 Wire Wire Line
 	2599 3672 1949 3672

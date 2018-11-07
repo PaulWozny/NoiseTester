@@ -616,10 +616,7 @@ F 3 "" H 3400 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5100 4750 5100 5900
-Wire Wire Line
 	5100 4350 5100 4750
-Connection ~ 5100 4750
 $Comp
 L Device:R_Pack04 RN1
 U 1 1 5BD29D9F
