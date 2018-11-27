@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Ntester_additional)(type Legacy)(uri ${KIPRJMOD}/Ntester_additional.lib)(options "")(descr ""))
+)

@@ -1,0 +1,27 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LM358
+D Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8
+K dual opamp
+F http://www.ti.com/lit/ds/symlink/lm2904-n.pdf
+$ENDCMP
+#
+$CMP LT1364
+D Dual 70MHz, 1000V/μs Op Amps, SOIC-8
+K dual opamp
+F http://www.analog.com/media/en/technical-documentation/data-sheets/OP07.pdf
+$ENDCMP
+#
+$CMP LT1818
+D Single Operational Amplifi ers
+K single opamp
+F http://cds.linear.com/docs/en/datasheet/60812fd.pdf
+$ENDCMP
+#
+$CMP LT6231
+D Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8
+K dual opamp
+F http://www.ti.com/lit/ds/symlink/lm2904-n.pdf
+$ENDCMP
+#
+#End Doc Library
